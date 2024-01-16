@@ -1,25 +1,10 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-// import { Instagram } from "@styled-icons/boxicons-logos/Instagram";
-// import { EmailOutline } from "@styled-icons/evaicons-outline/EmailOutline";
-// import { Applepay } from "@styled-icons/simple-icons/Applepay";
-// import { Visa } from "@styled-icons/boxicons-logos/Visa";
-// import styled from "styled-components";
-
-// const InstagramIcon = styled(Instagram)`
-//   width: 25px;
-// `;
-// const EmailOutlineIcon = styled(EmailOutline)`
-//   width: 25px;
-// `;
-// const ApplePayIcon = styled(Applepay)`
-// width: 30px;
-// `;
-// const VisaIcon = styled(Visa)`
-//   width: 30px;
-//   color: rgb(20, 38, 136);
-// `;
+import { FaInstagram as InstagramIcon } from "react-icons/fa";
+import { MdOutlineEmail as EmailOutlineIcon } from "react-icons/md";
+import { SiApplepay as ApplePayIcon } from "react-icons/si";
+import { LiaCcVisa as VisaIcon } from "react-icons/lia";
 
 const Footer = () => {
   return (
@@ -44,8 +29,8 @@ const Footer = () => {
       </section>
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-[12px]">
-          {/* <ApplePayIcon />
-          <VisaIcon /> */}
+          <ApplePayIcon size={35} />
+          <VisaIcon size={35} color="rgb(20, 38, 136)" />
         </div>
 
         <div className="flex items-center gap-5">
@@ -58,10 +43,10 @@ const Footer = () => {
         </div>
 
         <div className="flex items-center gap-[12px]">
-          {/* <Link href="https://www.instagram.com/minzu.13/" target="_blank">
-            <InstagramIcon />
+          <Link href="https://www.instagram.com/minzu.13/" target="_blank">
+            <InstagramIcon size={25} />
           </Link>
-          <EmailOutlineIcon /> */}
+          <EmailOutlineIcon size={25} />
         </div>
       </div>
 
