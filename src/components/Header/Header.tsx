@@ -2,14 +2,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ShoppingBag } from "@styled-icons/heroicons-outline/ShoppingBag";
-import styled from "styled-components";
+// import { ShoppingBag } from "@styled-icons/heroicons-outline/ShoppingBag";
+// import styled from "styled-components";
 
 import React from "react";
 
-const ShoppingBagIcon = styled(ShoppingBag)`
-  width: 25px;
-`;
+// const ShoppingBagIcon = styled(ShoppingBag)`
+//   width: 25px;
+// `;
 
 const Header = () => {
   const pathname = usePathname();
@@ -50,7 +50,7 @@ const Header = () => {
 
       <div className="flex items-center gap-5">
         <p>EN</p>
-        <ShoppingBagIcon />
+        {/* <ShoppingBagIcon /> */}
       </div>
     </header>
   );

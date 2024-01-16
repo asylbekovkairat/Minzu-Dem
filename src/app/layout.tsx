@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
-import StyledComponentsRegistry from "@/lib/registry";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import "./globals.css";
@@ -19,12 +18,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`container ${inter.className}`}>
-        <StyledComponentsRegistry>
-          <Header />
-          {children}
-          <Footer />
-        </StyledComponentsRegistry>
+      <body
+        className={`container !scroll-smooth ${inter.className}`}
+        suppressHydrationWarning={true}
+      >
+        <Header />
+        {children}
+        <Footer />
       </body>
     </html>
   );

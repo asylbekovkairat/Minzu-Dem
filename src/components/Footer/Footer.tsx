@@ -1,25 +1,25 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import { Instagram } from "@styled-icons/boxicons-logos/Instagram";
-import { EmailOutline } from "@styled-icons/evaicons-outline/EmailOutline";
-import { Applepay } from "@styled-icons/simple-icons/Applepay";
-import { Visa } from "@styled-icons/remix-fill/Visa";
-import styled from "styled-components";
+// import { Instagram } from "@styled-icons/boxicons-logos/Instagram";
+// import { EmailOutline } from "@styled-icons/evaicons-outline/EmailOutline";
+// import { Applepay } from "@styled-icons/simple-icons/Applepay";
+// import { Visa } from "@styled-icons/boxicons-logos/Visa";
+// import styled from "styled-components";
 
-const InstagramIcon = styled(Instagram)`
-  width: 25px;
-`;
-const EmailOutlineIcon = styled(EmailOutline)`
-  width: 25px;
-`;
-const ApplePayIcon = styled(Applepay)`
-  width: 30px;
-`;
-const VisaIcon = styled(Visa)`
-  width: 30px;
-  color: rgb(20, 38, 136);
-`;
+// const InstagramIcon = styled(Instagram)`
+//   width: 25px;
+// `;
+// const EmailOutlineIcon = styled(EmailOutline)`
+//   width: 25px;
+// `;
+// const ApplePayIcon = styled(Applepay)`
+// width: 30px;
+// `;
+// const VisaIcon = styled(Visa)`
+//   width: 30px;
+//   color: rgb(20, 38, 136);
+// `;
 
 const Footer = () => {
   return (
@@ -44,8 +44,8 @@ const Footer = () => {
       </section>
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-[12px]">
-          <ApplePayIcon />
-          <VisaIcon />
+          {/* <ApplePayIcon />
+          <VisaIcon /> */}
         </div>
 
         <div className="flex items-center gap-5">
@@ -58,10 +58,10 @@ const Footer = () => {
         </div>
 
         <div className="flex items-center gap-[12px]">
-          <Link href="https://www.instagram.com/minzu.13/" target="_blank">
+          {/* <Link href="https://www.instagram.com/minzu.13/" target="_blank">
             <InstagramIcon />
           </Link>
-          <EmailOutlineIcon />
+          <EmailOutlineIcon /> */}
         </div>
       </div>
 
