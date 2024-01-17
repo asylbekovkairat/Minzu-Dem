@@ -1,7 +1,7 @@
 import React from "react";
 
 const PaintingDetail = () => {
-  return <div>PaintingDetail</div>;
+  return <div>Index page</div>;
 };
 
 export default PaintingDetail;

@@ -14,6 +14,11 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
+  i18n: {
+    locales: ["en", "ru"],
+    defaultLocale: "ru",
+    localeDetection: false,
+  },
 };
 
 module.exports = nextConfig;

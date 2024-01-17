@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
-import Header from "@/components/Header/Header";
-import Footer from "@/components/Footer/Footer";
 import "./globals.css";
+import Header from "src/components/Header/Header";
+import Footer from "src/components/Footer/Footer";
 
 const inter = Roboto({ subsets: ["latin"], weight: ["100", "400", "700"] });
 
@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`container !scroll-smooth ${inter.className}`}
+        className={`container mx-auto !scroll-smooth ${inter.className}`}
         suppressHydrationWarning={true}
       >
         <Header />
