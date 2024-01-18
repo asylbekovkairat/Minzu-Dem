@@ -25,6 +25,7 @@ const config: Config = {
       md: { max: "840px" },
       lg: { max: "974px", min: "840px" },
       middle: { max: "675px" },
+      // tabletMin: { min: "705px" },
     },
   },
   plugins: [],

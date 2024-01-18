@@ -8,6 +8,13 @@ import { IPainting, PAINTINGS } from "src/constants";
 const PaintingDetail = () => {
   const { paintingId } = useParams();
   const [currentPaint, setCurrentPaint] = useState<IPainting>();
+  const [imageToShow, setImageToShow] = useState<string | undefined>(
+    currentPaint?.mainImage
+  );
+
+  useEffect(() => {
+    setImageToShow(currentPaint?.mainImage);
+  }, [currentPaint?.mainImage]);
 
   useEffect(() => {
     if (paintingId) {
@@ -21,8 +28,8 @@ const PaintingDetail = () => {
   return (
     <main className="flex items-start">
       <section className="w-1/2">
-        <div className="relative w-full h-[500px] flex justify-center">
-          <img className="h-full" src={currentPaint?.mainImage} alt="" />
+        <div className="relative w-full h-[500px] flex justify-center pr-7">
+          <img className="h-full" src={imageToShow} alt="" />
         </div>
         <div className="flex flex-wrap gap-3 mt-5">
           {currentPaint?.images.map(({ src, id }) => (
@@ -32,6 +39,7 @@ const PaintingDetail = () => {
               alt="untitled 5"
               width={150}
               height={200}
+              onClick={() => setImageToShow(src)}
             />
           ))}
         </div>

@@ -45,7 +45,9 @@ const Header = () => {
       <div className="flex items-center gap-5">
         <p>EN</p>
         <ShoppingBagIcon size={25} />
-        <MenuIcons className="min-[705px]:block" size={25} />
+        <div className="hidden tablet:block">
+          <MenuIcons size={25} />
+        </div>
       </div>
     </header>
   );
