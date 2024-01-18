@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { LiaShoppingBagSolid as ShoppingBagIcon } from "react-icons/lia";
+import { RxHamburgerMenu as MenuIcons } from "react-icons/rx";
 import React from "react";
 
 const Header = () => {
@@ -12,7 +13,7 @@ const Header = () => {
       <Link href={"/"}>
         <h1 className="text-4xl font-normal">Minzu Dem</h1>
       </Link>
-      <nav className="flex items-center gap-4">
+      <nav className="flex items-center gap-4 tablet:hidden">
         <Link
           className={`link text-xl tracking-wider font-normal uppercase ${
             !pathname.includes("bio") &&
@@ -44,6 +45,7 @@ const Header = () => {
       <div className="flex items-center gap-5">
         <p>EN</p>
         <ShoppingBagIcon size={25} />
+        <MenuIcons className="min-[705px]:block" size={25} />
       </div>
     </header>
   );

@@ -18,6 +18,14 @@ const config: Config = {
         "paint-title": "rgb(51, 51, 51)",
       },
     },
+    screens: {
+      tablet: { max: "705px" },
+      mobile: { max: "475px" },
+      mobileMin: { min: "475px" },
+      md: { max: "840px" },
+      lg: { max: "974px", min: "840px" },
+      middle: { max: "675px" },
+    },
   },
   plugins: [],
 };

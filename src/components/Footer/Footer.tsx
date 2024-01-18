@@ -9,15 +9,15 @@ import { LiaCcVisa as VisaIcon } from "react-icons/lia";
 const Footer = () => {
   return (
     <footer className="flex flex-col mt-[100px] mb-7">
-      <section className="flex justify-between mb-16">
+      <section className="flex justify-between mb-16 gap-10 md:flex-col">
         <Link href={"/"}>
           <h1 className="text-4xl font-normal">Minzu Dem</h1>
         </Link>
         <div className="flex flex-col items-start gap-5">
           <p className="font-bold">Be notified when new items drop</p>
-          <div className="flex">
+          <div className="flex md:w-full mobile:flex-col">
             <input
-              className="grow-[9999] w-[500px] basis-60 px-[18px] py-[9px] bg-white border-[#ccc] border-2 rounded-sm border-r-0 rounded-e-none"
+              className="mobile:mb-2 grow-[9999] w-[500px] px-[18px] py-[9px] bg-white border-[#ccc] border-2 rounded-sm mobileMin:border-r-0 rounded-e-none lg:w-[350px] md:w-full"
               type="text"
               placeholder="Email address"
             />
@@ -40,12 +40,18 @@ const Footer = () => {
           <EmailOutlineIcon size={25} />
         </div>
       </div>
-      <div className="flex justify-between items-center mt-[25px]">
+      <div className="flex justify-between items-center mt-[25px] middle:flex-col gap-3">
         <div className="flex items-center gap-5">
-          <Link className="link" href={"/pages/return-and-refund-policy"}>
+          <Link
+            className="link middle:text-sm"
+            href={"/pages/return-and-refund-policy"}
+          >
             Return & Refund Policy
           </Link>
-          <Link className="link" href={"/pages/return-and-refund-policy"}>
+          <Link
+            className="link middle:text-sm"
+            href={"/pages/return-and-refund-policy"}
+          >
             Terms of Service
           </Link>
         </div>
