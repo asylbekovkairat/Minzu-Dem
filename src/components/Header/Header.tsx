@@ -10,14 +10,16 @@ const Header = () => {
 
   return (
     <header className="flex items-center justify-between h-[150px]">
-      <Link href={"/"}>
-        <h1 className="text-4xl font-normal">Minzu Dem</h1>
+      <Link className="flex items-center" href={"/"}>
+        <img className="w-[130px]" src="/logo.svg" alt="logo" />
+        <h1 className="text-2xl font-normal uppercase">Minzu</h1>
       </Link>
       <nav className="flex items-center gap-4 tablet:hidden">
         <Link
           className={`link text-xl tracking-wider font-normal uppercase ${
             !pathname.includes("bio") &&
             !pathname.includes("contact") &&
+            !pathname.includes("painting-detail") &&
             "border-b border-black"
           }`}
           href={"/"}

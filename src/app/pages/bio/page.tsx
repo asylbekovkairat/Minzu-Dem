@@ -1,10 +1,15 @@
+import { Metadata } from "next";
 import Image from "next/image";
 import React from "react";
 
+export const metadata: Metadata = {
+  title: "Minzu Dem | Bio",
+};
+
 const Bio = () => {
   return (
-    <section>
-      <div className="flex flex-col gap-6 text-2xl mb-7">
+    <section className="flex gap-12">
+      <div className="flex flex-col gap-6 text-lg mb-7">
         <p>
           A young artist working in the style of abstractionism, he possesses
           incredible talent and passion for his art. He sees his paintings as

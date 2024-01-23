@@ -1,8 +1,11 @@
-import Head from "next/head";
+import { Metadata } from "next";
 import React, { useMemo } from "react";
 import PaintingCard from "src/components/PaintingCard";
 import { PAINTINGS } from "src/constants";
 
+export const metadata: Metadata = {
+  title: "Minzu Dem | Paintings",
+};
 const Paintings = () => {
   const renderPaintings = useMemo(
     () => PAINTINGS.map((paint) => <PaintingCard key={paint.id} {...paint} />),
@@ -10,10 +13,7 @@ const Paintings = () => {
   );
   return (
     <>
-      <Head>
-        <title>Minzu Dem | Paintings</title>
-      </Head>
-      <section className="flex gap-3 flex-wrap justify-between mt-10">
+      <section className="flex gap-6 justify-center flex-wrap mt-10">
         {renderPaintings}
       </section>
     </>

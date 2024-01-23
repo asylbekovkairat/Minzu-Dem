@@ -15,7 +15,7 @@ export interface IPainting {
   images: Array<Image>;
   price: number;
   currency: "EUR" | "EUR";
-  description: string;
+  description: string | string[];
   sizes: Size;
   paintingType: string;
   title: string;
@@ -40,21 +40,21 @@ export const PAINTINGS: Array<IPainting> = [
         src: "https://images.saatchiart.com/saatchi/2336329/art/11138819/10201095-GWMFPTNP-7.jpg",
       },
     ],
-    price: 99999,
+    price: 100000,
     currency: "EUR",
     description:
-      "I remember that when I painted this picture, my hands moved on their own, everything happened so quickly, I painted with pastels and then such a strong feeling of freedom came, such a strong joy and it was so bright and I thought about childhood, when such a state was commonplace for me. I started it in 2022, and finished it in March 2023; it had three stages of development. I really want this painting to share the same bright feelings with the new owner, so that it adds more brightness to the space.",
+      "1+11=111 is an original Minzu Dem oil on canvas painting in soothing bright pastel colors. It conveys the essence of flame hearts, when souls are the same, creating a new world of love and balance.",
     sizes: {
-      width: 100,
-      height: 200,
-      d: 20,
+      width: 105,
+      height: 119,
+      d: 2.5,
     },
     paintingType: "Painting, Oil on Canvas",
-    title: "1+11=111 Painting",
+    title: "1+11=111",
   },
   {
     id: 2,
-    price: 49500,
+    price: 55000,
     currency: "EUR",
     description:
       "The painting is painted in oil on canvas. Over time, people who saw the paintings always wondered, is this cat flying in the sky, swimming in the sea or just dancing? what do you think? what will be your choice?",
@@ -64,7 +64,7 @@ export const PAINTINGS: Array<IPainting> = [
       d: 3,
     },
     paintingType: "Painting, Oil on Canvas",
-    title: "Happy Painting",
+    title: "Happy 2023.",
     mainImage:
       "https://images.saatchiart.com/saatchi/2336329/art/11134919/10197195-CIQVQUHU-6.jpg",
     images: [
@@ -106,15 +106,19 @@ export const PAINTINGS: Array<IPainting> = [
     ],
     price: 6795,
     currency: "EUR",
-    description:
-      'The painting "Vedmerd" is a portrait of a young girl radiating wisdom and deep thoughts. The author used oil and acrylic to create this painting on canvas in order to convey its unique energy and beauty. Over the course of two years, from 2021 to 2023, the author was inspired by this girl and her amazing wisdom, trying to capture her on canvas. Every brushstroke was imbued with attention to detail in order to convey the depth of her soul When the author met this girl again after completing the painting, he was amazed at how much she corresponded to his idea of her. His heart was filled with joy, seeing that he was able to convey her wisdom and beauty on canvas "Vedmerd" became not just a painting, but a story of meeting an amazing soul that will remain in the author`s heart forever.',
+    description: [
+      'The painting "Vedmerd" is a portrait of a young girl radiating wisdom and deep thoughts. The author used oil and acrylic to create this painting on canvas in order to convey its unique energy and beauty.',
+      "Over the course of two years, from 2021 to 2023, the author was inspired by this girl and her amazing wisdom, trying to capture her on canvas. Every brushstroke was imbued with attention to detail in order to convey the depth of her soul.",
+      "When the author met this girl again after completing the painting, he was amazed at how much she corresponded to his idea of her. His heart was filled with joy, seeing that he was able to convey her wisdom and beauty on canvas.",
+      '"Vedmerd" became not just a painting, but a story of meeting an amazing soul that will remain in the author`s heart forever.2023',
+    ],
     sizes: {
       width: 80,
       height: 80,
       d: 2.5,
     },
     paintingType: "Painting, Acrylic on Canvas",
-    title: "Vedmerd Painting",
+    title: "Vedmerd",
   },
   {
     id: 5,
@@ -138,17 +142,17 @@ export const PAINTINGS: Array<IPainting> = [
         src: "https://images.saatchiart.com/saatchi/2336329/art/11119517/additional_64a02f2de8101db1afb00c2690c3c82b31cfbefe-AICC2-7.jpg",
       },
     ],
-    price: 4905,
+    price: 5450,
     currency: "EUR",
     description:
-      "The painting is an abstract image consisting of different colors and shapes. In a painting you can see conflict and roughness, but still find one direction.",
+      "The painting is an abstract image consisting of different colors and shapes. In a painting you can see conflict and roughness, but still find one direction. The author used oil to create this painting on canvas.",
     sizes: {
       width: 60,
       height: 80,
       d: 3,
     },
     paintingType: "Painting, Oil on Canvas",
-    title: "Untitled 2 Painting",
+    title: "Untitled 2",
   },
   {
     id: 6,
@@ -168,17 +172,17 @@ export const PAINTINGS: Array<IPainting> = [
         src: "https://images.saatchiart.com/saatchi/2336329/art/11098139/additional_f07e2df4ddd91ae916ebe4742b5b6b7e4c946ab2-AICC2-7.jpg",
       },
     ],
-    price: 15120,
+    price: 16880,
     currency: "EUR",
     description:
-      "The painting 'Darkness always gives spaces for light' is an abstract image consisting of two primary colors - white and red. Red color occupies about 90 percent of the canvas surface. The title of the painting refers to the theme of the battle between darkness and light. Despite the dominance of red, the forces of light are expressed in such a way that everything becomes clear: light wins. The author of the picture is surprised that viewers always interpret it as a victory of light. This indicates that the forces of light always prevail in this struggle. The visual depiction of the battle between darkness and light creates a tense and dynamic atmosphere, making the viewer think about the eternal struggle between these two opposites.",
+      "This painting is about how important it is to know your roots, your history, because even a small branch can break all the frames that you have built or accepted. ",
     sizes: {
       width: 100,
       height: 150,
       d: 3,
     },
-    paintingType: "Painting, Oil on Canvas",
-    title: "Branch of Freedom Painting",
+    paintingType: "Oil, acrylic, pastel on canvas",
+    title: "Branch of Freedom",
   },
   {
     id: 7,
@@ -206,7 +210,7 @@ export const PAINTINGS: Array<IPainting> = [
         src: "https://images.saatchiart.com/saatchi/2336329/art/11134567/additional_c9ef6f2cab60b3d062c381309336e1e6ac0cb0e4-AICC2-7.jpg",
       },
     ],
-    price: 13050,
+    price: 14500,
     currency: "EUR",
     description:
       "In this painting, a woman is depicted embracing the entire planet in her hands. Her pregnant body expresses tenderness and care. The artist conveyed his state after a trip to the mountains - he is full of energy, inspiration, and ready to share his love with the whole world. The painting is filled with bright colors and positive energy that makes the viewer feel joy and gratitude for this beautiful world.",
@@ -216,7 +220,7 @@ export const PAINTINGS: Array<IPainting> = [
       d: 2.5,
     },
     paintingType: "Painting, Oil on Canvas",
-    title: "Holding the whole planet Painting",
+    title: "Holding the whole planet",
   },
   {
     id: 8,
@@ -232,7 +236,7 @@ export const PAINTINGS: Array<IPainting> = [
         src: "https://images.saatchiart.com/saatchi/2336329/art/11119461/additional_f18096be635c8fc007a774d4b872ecfd19ae051f-AICC2-7.jpg",
       },
     ],
-    price: 899,
+    price: 999,
     currency: "EUR",
     description:
       "The painting was painted with acrylic paints on canvas, the painting came to the author in a dream, it looked like different forms of energy and in the form of doors of different colors, the author believes that by opening one main door, you gain access to all the others, the work was written in 2021 on the shore of Lake Issyk -Kul.",
@@ -242,7 +246,7 @@ export const PAINTINGS: Array<IPainting> = [
       d: 2,
     },
     paintingType: "Painting, Acrylic on Canvas",
-    title: "Doors Painting",
+    title: "Doors",
   },
   {
     id: 3,
@@ -264,8 +268,10 @@ export const PAINTINGS: Array<IPainting> = [
     ],
     price: 4725,
     currency: "EUR",
-    description:
-      "The painting 'Darkness always gives spaces for light' is an abstract image consisting of two primary colors - white and red. Red color occupies about 90 percent of the canvas surface. The title of the painting refers to the theme of the battle between darkness and light. Despite the dominance of red, the forces of light are expressed in such a way that everything becomes clear: light wins. The author of the picture is surprised that viewers always interpret it as a victory of light. This indicates that the forces of light always prevail in this struggle. The visual depiction of the battle between darkness and light creates a tense and dynamic atmosphere, making the viewer think about the eternal struggle between these two opposites.",
+    description: [
+      "The painting 'Darkness always gives spaces for light' is an abstract image consisting of two primary colors - white and red. Red color occupies about 90 percent of the canvas surface. The title of the painting refers to the theme of the battle between darkness and light. Despite the dominance of red, the forces of light are expressed in such a way that everything becomes clear: light wins.",
+      "The author of the picture is surprised that viewers always interpret it as a victory of light. This indicates that the forces of light always prevail in this struggle. The visual depiction of the battle between darkness and light creates a tense and dynamic atmosphere, making the viewer think about the eternal struggle between these two opposites.",
+    ],
     sizes: {
       width: 84,
       height: 105,
@@ -273,5 +279,46 @@ export const PAINTINGS: Array<IPainting> = [
     },
     paintingType: "Painting, Oil on Canvas",
     title: "Darkness all ways gives space for light Painting",
+  },
+  {
+    id: 9,
+    mainImage:
+      "https://images.saatchiart.com/saatchi/2336329/art/11101501/10163781-GHPOKQLR-7.jpg",
+    images: [
+      {
+        id: 1,
+        src: "https://images.saatchiart.com/saatchi/2336329/art/11101501/10163781-GHPOKQLR-7.jpg",
+      },
+      {
+        id: 2,
+        src: "https://images.saatchiart.com/saatchi/2336329/art/11101501/additional_be89e9d93d59c26169e21d317c2179c2809b7058-AICC2-7.jpg",
+      },
+      {
+        id: 3,
+        src: "https://images.saatchiart.com/saatchi/2336329/art/11101501/additional_239a528a53e8c475cce0dadd8243de85cc025158-AICC2-7.jpg",
+      },
+      {
+        id: 4,
+        src: "https://images.saatchiart.com/saatchi/2336329/art/11101501/additional_ef07364a172a19d27746bea1733dec358883845b-AICC2-7.jpg",
+      },
+      {
+        id: 5,
+        src: "https://images.saatchiart.com/saatchi/2336329/art/11101501/additional_6bfc9a0e89f5c21f134583c29279383e89b9a26d-AICC2-7.jpg",
+      },
+    ],
+    price: 4725,
+    currency: "EUR",
+    description: [
+      "The painting is a beautiful representation of spiritual wisdom and inner vision. The creature depicted in the painting seems to possess a deep understanding of the universe and the ability to navigate through different realms. The use of the third eye symbolizes insight and intuition, while the large hands-wings suggest the power to create and fly freely. The headdress adds a touch of mysticism, hinting at the creature's connection to higher energies.",
+      "Overall, the painting evokes a sense of enlightenment and spiritual growth, encouraging the viewer to seek wisdom and inner guidance. It serves as a reminder to trust one's intuition and embrace personal development. The elements of the sun on the creature's chest further emphasize the idea of enlightenment and illumination.",
+      "In conclusion, this painting is a powerful symbol of wisdom and spiritual evolution, inviting the viewer to explore their inner vision and embrace their journey towards enlightenment.",
+    ],
+    sizes: {
+      width: 100,
+      height: 150,
+      d: 3,
+    },
+    paintingType: "Painting, Oil on Canvas",
+    title: "Kyrgyz Shaman, 2022",
   },
 ];

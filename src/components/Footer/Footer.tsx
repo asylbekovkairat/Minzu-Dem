@@ -10,9 +10,6 @@ const Footer = () => {
   return (
     <footer className="flex flex-col mt-[100px] mb-7">
       <section className="flex justify-between mb-16 gap-10 md:flex-col">
-        <Link href={"/"}>
-          <h1 className="text-4xl font-normal">Minzu Dem</h1>
-        </Link>
         <div className="flex flex-col items-start gap-5">
           <p className="font-bold">Be notified when new items drop</p>
           <div className="flex md:w-full mobile:flex-col">
