@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`container mx-auto !scroll-smooth ${inter.className}`}
+        className={`mx-auto !scroll-smooth ${inter.className}`}
         suppressHydrationWarning={true}
       >
         <Header />

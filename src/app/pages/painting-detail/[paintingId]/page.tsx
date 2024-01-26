@@ -49,7 +49,7 @@ const PaintingDetail = () => {
 
   return (
     <>
-      <main className="flex items-start mt-[75px] mobile:flex-col mobile:mt-0">
+      <main className="container flex items-start mt-[75px] mobile:flex-col mobile:mt-0">
         <section className="w-1/2 flex mobile:w-full">
           <div className="flex flex-col flex-wrap gap-3 mobile:hidden">
             {renderImages}

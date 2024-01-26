@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 const Bio = () => {
   return (
-    <section className="flex gap-12">
+    <section className="container flex gap-12">
       <div className="flex flex-col gap-6 text-lg mb-7">
         <p>
           A young artist working in the style of abstractionism, he possesses

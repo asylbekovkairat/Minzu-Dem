@@ -8,7 +8,7 @@ import { LiaCcVisa as VisaIcon } from "react-icons/lia";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col mt-[100px] mb-7">
+    <footer className="container flex flex-col mt-[100px] mb-7">
       <section className="flex justify-between mb-16 gap-10 md:flex-col">
         <div className="flex flex-col items-start gap-5">
           <p className="font-bold">Be notified when new items drop</p>
