@@ -10,7 +10,10 @@ const Header = () => {
 
   return (
     <header className="flex items-center justify-between h-[150px]">
-      <Link className="flex items-center" href={"/"}>
+      <Link
+        className="flex items-center mobile:justify-between mobile:w-[61%]"
+        href={"/"}
+      >
         <img className="w-[130px] mobile:w-[95px]" src="/logo.svg" alt="logo" />
         <h1 className="text-2xl font-normal uppercase">Minzu</h1>
       </Link>

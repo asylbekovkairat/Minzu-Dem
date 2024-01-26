@@ -27,12 +27,12 @@ const PaintingCard = ({
       <div className="flex items-end justify-between mobile:flex-col mobile:items-start">
         <div className="">
           <p className="text-[17px] text-paint-title">{title}</p>
-          <p className="text-xs text-paint-desc">
+          {/* <p className="text-xs text-paint-desc">
             Paintings, <br /> {width} W x {height} H x {d} D cm
-          </p>
+          </p> */}
         </div>
-        <p>
-          {currency}&nbsp;
+        <p className="text-[#bfbdbd]">
+          &#x20ac;
           {price}
         </p>
       </div>
