@@ -75,8 +75,8 @@ const PaintingDetail = () => {
           </div>
         </section>
         {/* <Slider {...settings}>{renderImages}</Slider> */}
-        <section className="w-1/2 mobile:w-full mobile:mt-[10px]">
-          <div className="max-h-[500px] h-[500px] flex flex-col gap-16 items-start justify-between mobile:justify-normal mobile:gap-4 mobile:h-auto">
+        <section className="w-1/2 mobile:w-full mobile:mt-[10px] mobile:mb-28">
+          <div className="flex flex-col gap-16 items-start justify-between mobile:justify-normal mobile:gap-4 mobile:h-auto">
             <div>
               <h2 className="font-bold text-3xl">{currentPaint?.title}</h2>
               <p className="font-bold mt-3 mobile:mt-0 text-[#bfbdbd]">
