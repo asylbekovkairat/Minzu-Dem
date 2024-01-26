@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import { IPainting, PAINTINGS } from "src/constants";
-import { Navigation, Pagination, Scrollbar } from "swiper/modules";
+import { Pagination, Scrollbar } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -75,7 +75,7 @@ const PaintingDetail = () => {
           </div>
         </section>
         {/* <Slider {...settings}>{renderImages}</Slider> */}
-        <section className="w-1/2 mobile:w-full mobile:mt-[10px] mobile:mb-28">
+        <section className="w-1/2 mobile:w-full mobile:mt-[10px] ">
           <div className="flex flex-col gap-16 items-start justify-between mobile:justify-normal mobile:gap-4 mobile:h-auto">
             <div>
               <h2 className="font-bold text-3xl">{currentPaint?.title}</h2>
@@ -95,15 +95,15 @@ const PaintingDetail = () => {
               ) : (
                 <p>{currentPaint?.description}</p>
               )}
-              <div>
-                <p>{currentPaint?.paintingType} </p>
+              <div className="mt-7 mb-6">
+                <p className="font-semibold">{currentPaint?.paintingType} </p>
                 <p>
-                  Size: {currentPaint?.sizes.width} W x{" "}
+                  <strong>Size:</strong> {currentPaint?.sizes.width} W x{" "}
                   {currentPaint?.sizes.height} H x {currentPaint?.sizes.d} D cm
                 </p>
-                <p>Ships in a Box</p>
+                <p className="font-semibold">Ships in a Box</p>
               </div>
-              <button className="border border-black w-full py-4 text-[18px] hover:bg-slate-900 hover:text-white transition duration-500 ease-in-out self-end">
+              <button className="border border-black w-full py-4 text-[18px] hover:bg-[#3a3a3a] hover:text-white transition duration-500 ease-in-out self-end">
                 I want to buy it
               </button>
             </div>

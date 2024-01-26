@@ -8,8 +8,9 @@ import { LiaCcVisa as VisaIcon } from "react-icons/lia";
 
 const Footer = () => {
   return (
-    <footer className="container flex flex-col mt-[100px] mb-7 mobile:mb-10">
-      <section className="flex justify-between mb-16 gap-10 md:flex-col">
+    <footer className="container flex flex-col mt-[100px] mb-7 mobile:mb-10 mobile:mt-20">
+      <span className="bg-[#3a3a3a] h-[1px] mb-6" />
+      {/* <section className="flex justify-between mb-16 gap-10 md:flex-col">
         <div className="flex flex-col items-start gap-5">
           <p className="font-bold">Be notified when new items drop</p>
           <div className="flex md:w-full mobile:flex-col">
@@ -23,8 +24,8 @@ const Footer = () => {
             </button>
           </div>
         </div>
-      </section>
-      <div className="flex justify-between items-center">
+      </section> */}
+      <div className="flex justify-center items-center">
         {/* <div className="flex items-center gap-[12px]">
           <ApplePayIcon size={35} />
           <VisaIcon size={35} color="rgb(20, 38, 136)" />
