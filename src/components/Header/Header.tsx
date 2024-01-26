@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <header className="flex items-center justify-between h-[150px]">
       <Link className="flex items-center" href={"/"}>
-        <img className="w-[130px]" src="/logo.svg" alt="logo" />
+        <img className="w-[130px] mobile:w-[95px]" src="/logo.svg" alt="logo" />
         <h1 className="text-2xl font-normal uppercase">Minzu</h1>
       </Link>
       <nav className="flex items-center gap-4 tablet:hidden">
@@ -45,8 +45,8 @@ const Header = () => {
       </nav>
 
       <div className="flex items-center gap-5">
-        <p>EN</p>
-        <ShoppingBagIcon size={25} />
+        <p className="hidden">EN</p>
+        <ShoppingBagIcon className="hidden" size={25} />
         <div className="hidden tablet:block">
           <MenuIcons size={25} />
         </div>

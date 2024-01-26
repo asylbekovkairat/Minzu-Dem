@@ -25,10 +25,10 @@ const Footer = () => {
         </div>
       </section>
       <div className="flex justify-between items-center">
-        <div className="flex items-center gap-[12px]">
+        {/* <div className="flex items-center gap-[12px]">
           <ApplePayIcon size={35} />
           <VisaIcon size={35} color="rgb(20, 38, 136)" />
-        </div>
+        </div> */}
 
         <div className="flex items-center gap-[12px]">
           <Link href="https://www.instagram.com/minzu.13/" target="_blank">

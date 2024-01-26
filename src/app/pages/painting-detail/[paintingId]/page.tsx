@@ -29,12 +29,12 @@ const PaintingDetail = () => {
     () =>
       currentPaint?.images.map(({ src, id }) => (
         <Image
-          className="cursor-pointer"
+          className="cursor-pointer w-[55px] h-[55px]"
           key={id}
           src={src}
           alt="untitled 5"
-          width={150}
-          height={200}
+          width={55}
+          height={55}
           onClick={() => setImageToShow(src)}
         />
       )),
@@ -43,12 +43,12 @@ const PaintingDetail = () => {
 
   return (
     <>
-      <main className="flex items-start">
-        <section className="w-1/2">
+      <main className="flex items-start mt-[75px]">
+        <section className="w-1/2 flex">
+          <div className="flex flex-col flex-wrap gap-3">{renderImages}</div>
           <div className="relative w-full max-h-[500px]  h-[500px] flex justify-center pr-7">
             <img className="h-full" src={imageToShow} alt="" />
           </div>
-          <div className="flex flex-wrap gap-3 mt-5">{renderImages}</div>
         </section>
         <section className="w-1/2">
           <div className="max-h-[500px] h-[500px] flex flex-col gap-16 items-start justify-between">
@@ -57,7 +57,7 @@ const PaintingDetail = () => {
               <p className="font-bold mt-3">
                 {currentPaint?.currency} {currentPaint?.price}
               </p>
-              <span className="text-sm">Tax included.</span>
+              {/* <span className="text-sm">Tax included.</span> */}
             </div>
 
             <div className="flex flex-col gap-2">
