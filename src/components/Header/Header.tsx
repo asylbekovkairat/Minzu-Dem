@@ -27,11 +27,11 @@ const Header = () => {
     <>
       <header className="container flex items-center justify-between h-[150px] mobile:h-[100px]">
         <Link
-          className="flex items-center mobile:justify-between mobile:w-[61%]"
+          className="flex items-center mobile:justify-between mobile:w-[62%]"
           href={"/"}
         >
           <img
-            className="w-[130px] mobile:w-[95px]"
+            className="w-[130px] mobile:w-[72px]"
             src="/logo.svg"
             alt="logo"
           />

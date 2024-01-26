@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 const Paintings = () => {
   const renderPaintings = useMemo(
-    () => PAINTINGS.map((paint) => <PaintingCard key={paint.id} {...paint} />),
+  () => PAINTINGS.map((paint) => <PaintingCard key={paint.id} {...paint} />),
     [PAINTINGS]
   );
   return (

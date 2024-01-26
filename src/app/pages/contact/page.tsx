@@ -28,7 +28,7 @@ const Contact = () => {
 
   return (
     <section className="container mt-[55px] max-w-[1000px] mx-auto mobile:mt-11">
-      <p className="mb-7 mx-auto">
+      <p className="mb-7 mx-auto max-w-[1200px]">
         You're welcome to contact us with any inquiry. For questions regarding
         your order, please include your order number.
       </p>
