@@ -9,6 +9,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css/scrollbar";
 
 const PaintingDetail = () => {
   const { paintingId } = useParams();
@@ -57,9 +58,9 @@ const PaintingDetail = () => {
             <img className="h-full mobile:hidden" src={imageToShow} alt="" />
             <Swiper
               scrollbar={{
-                hide: true,
+                hide: false,
               }}
-              modules={[Scrollbar]}
+              modules={[Scrollbar, Pagination]}
               className="mySwiper details-slider"
             >
               {currentPaint?.images.map(({ src, id }) => (
@@ -74,7 +75,7 @@ const PaintingDetail = () => {
           </div>
         </section>
         {/* <Slider {...settings}>{renderImages}</Slider> */}
-        <section className="w-1/2 mobile:w-full">
+        <section className="w-1/2 mobile:w-full mobile:mt-[10px]">
           <div className="max-h-[500px] h-[500px] flex flex-col gap-16 items-start justify-between mobile:justify-normal mobile:gap-4 mobile:h-auto">
             <div>
               <h2 className="font-bold text-3xl">{currentPaint?.title}</h2>
