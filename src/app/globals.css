@@ -24,3 +24,13 @@
 .link:hover {
   border-bottom: 1px solid black;
 }
+
+.details-slider {
+  display: none !important;
+}
+
+@media only screen and (max-width: 475px) {
+  .details-slider {
+    display: block !important;
+  }
+}

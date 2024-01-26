@@ -4,6 +4,11 @@ import Image from "next/image";
 import { useParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import { IPainting, PAINTINGS } from "src/constants";
+import { Navigation, Pagination, Scrollbar } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 const PaintingDetail = () => {
   const { paintingId } = useParams();
@@ -43,19 +48,38 @@ const PaintingDetail = () => {
 
   return (
     <>
-      <main className="flex items-start mt-[75px]">
-        <section className="w-1/2 flex">
-          <div className="flex flex-col flex-wrap gap-3">{renderImages}</div>
-          <div className="relative w-full max-h-[500px]  h-[500px] flex justify-center pr-7">
-            <img className="h-full" src={imageToShow} alt="" />
+      <main className="flex items-start mt-[75px] mobile:flex-col">
+        <section className="w-1/2 flex mobile:w-full">
+          <div className="flex flex-col flex-wrap gap-3 mobile:hidden">
+            {renderImages}
+          </div>
+          <div className="relative w-full max-h-[500px]  h-[500px] flex justify-center pr-7 mobile:pr-0">
+            <img className="h-full mobile:hidden" src={imageToShow} alt="" />
+            <Swiper
+              scrollbar={{
+                hide: true,
+              }}
+              modules={[Scrollbar]}
+              className="mySwiper details-slider"
+            >
+              {currentPaint?.images.map(({ src, id }) => (
+                <SwiperSlide
+                  key={id}
+                  style={{ display: "flex", alignItems: "center" }}
+                >
+                  <img src={src} alt={src} />
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </section>
-        <section className="w-1/2">
-          <div className="max-h-[500px] h-[500px] flex flex-col gap-16 items-start justify-between">
+        {/* <Slider {...settings}>{renderImages}</Slider> */}
+        <section className="w-1/2 mobile:w-full">
+          <div className="max-h-[500px] h-[500px] flex flex-col gap-16 items-start justify-between mobile:justify-normal mobile:gap-4 mobile:h-auto">
             <div>
               <h2 className="font-bold text-3xl">{currentPaint?.title}</h2>
-              <p className="font-bold mt-3">
-                {currentPaint?.currency} {currentPaint?.price}
+              <p className="font-bold mt-3 mobile:mt-0 text-[#bfbdbd]">
+                &#x20ac;{currentPaint?.price}
               </p>
               {/* <span className="text-sm">Tax included.</span> */}
             </div>
