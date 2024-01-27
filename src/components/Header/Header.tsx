@@ -15,7 +15,7 @@ const Header = () => {
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflowY = "hidden";
-      document.body.style.position = "relative";
+      document.body.style.position = "fixed";
     } else {
       document.body.style.overflowY = "auto";
       document.body.style.position = "unset";
