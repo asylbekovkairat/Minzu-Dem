@@ -10,6 +10,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/scrollbar";
+import Modal from "src/components/Modal";
 
 const PaintingDetail = () => {
   const { paintingId } = useParams();
@@ -17,6 +18,9 @@ const PaintingDetail = () => {
   const [imageToShow, setImageToShow] = useState<string | undefined>(
     currentPaint?.mainImage
   );
+
+  const [inquiryModal, setInquiryModal] = useState<boolean>(false);
+  const [paintingModal, setPaintingModal] = useState<string | undefined>("");
 
   useEffect(() => {
     setImageToShow(currentPaint?.mainImage);
@@ -47,15 +51,29 @@ const PaintingDetail = () => {
     [currentPaint?.images]
   );
 
+  const handleCloseModal = () => {
+    setInquiryModal(false);
+    setPaintingModal("");
+  };
+  const handleOpenModal = () => setInquiryModal(true);
+
+  const openPaintingModal = (paintingSrc: string | undefined) =>
+    setPaintingModal(paintingSrc);
+
   return (
-    <>
-      <main className="container flex items-start mt-[75px] mobile:flex-col mobile:mt-0">
+    <div className="container">
+      <main className="flex mt-[75px] items-start tablet:flex-col mobile:mt-0">
         <section className="w-1/2 flex mobile:w-full">
           <div className="flex flex-col flex-wrap gap-3 mobile:hidden">
             {renderImages}
           </div>
           <div className="relative w-full max-h-[500px]  h-[500px] flex justify-center pr-7 mobile:pr-0">
-            <img className="h-full mobile:hidden" src={imageToShow} alt="" />
+            <img
+              className="h-full mobile:hidden"
+              src={imageToShow}
+              alt=""
+              onClick={() => openPaintingModal(imageToShow)}
+            />
             <Swiper
               scrollbar={{
                 hide: false,
@@ -66,20 +84,22 @@ const PaintingDetail = () => {
               {currentPaint?.images.map(({ src, id }) => (
                 <SwiperSlide
                   key={id}
-                  style={{ display: "flex", alignItems: "center" }}
+                  style={{ display: "flex", justifyContent: "center" }}
                 >
-                  <img src={src} alt={src} />
+                  <img
+                    src={src}
+                    alt={src}
+                    onClick={() => openPaintingModal(src)}
+                  />
                 </SwiperSlide>
               ))}
             </Swiper>
           </div>
         </section>
-        {/* <Slider {...settings}>{renderImages}</Slider> */}
         <section className="w-1/2 mobile:w-full mobile:mt-[10px] ">
           <div className="flex flex-col gap-16 items-start justify-between mobile:justify-normal mobile:gap-4 mobile:h-auto">
             <div>
               <h2 className="font-bold text-3xl">{currentPaint?.title}</h2>
-              {/* <span className="text-sm">Tax included.</span> */}
             </div>
 
             <div className="flex flex-col gap-2">
@@ -103,14 +123,49 @@ const PaintingDetail = () => {
                 </p>
                 <p className="mt-[8px] text-[#bfbdbd]">Ships in a Box</p>
               </div>
-              <button className="border border-black w-full py-4 text-[18px] hover:bg-[#3a3a3a] hover:text-white transition duration-500 ease-in-out self-end">
+              <button
+                className="border border-black w-full py-4 text-[18px] hover:bg-[#3a3a3a] hover:text-white transition duration-500 ease-in-out self-end"
+                onClick={handleOpenModal}
+              >
                 I want to buy it
               </button>
             </div>
           </div>
         </section>
       </main>
-    </>
+      <Modal isOpen={inquiryModal} onClose={handleCloseModal}>
+        <form className="m-3 flex flex-col gap-2">
+          <h3>Please, leave your contact data</h3>
+          <input
+            className="w-full px-[12px] py-[8px] border-[#ccc] border-2 rounded-sm"
+            placeholder="Your Name"
+            type="text"
+          />
+          <input
+            className="w-full px-[12px] py-[8px] border-[#ccc] border-2 rounded-sm"
+            placeholder="Your Email"
+            type="text"
+          />
+          <textarea
+            className="h-24 w-full px-[12px] py-[10px] border-[#ccc] border-2 rounded-sm"
+            placeholder="Your message"
+          />
+          <button
+            className="max-w-32 uppercase rounded-s-none rounded-e-sm px-[18px] py-[10px] bg-[#3a3a3a] text-white font-bold tracking-[0.15em]"
+            type="button"
+          >
+            Send
+          </button>
+        </form>
+      </Modal>
+      <Modal isOpen={!!paintingModal} onClose={handleCloseModal}>
+        <img
+          className="max-w-[500px] max-h-[500px]"
+          src={paintingModal}
+          alt="detailed painting"
+        />
+      </Modal>
+    </div>
   );
 };
 

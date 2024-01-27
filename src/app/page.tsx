@@ -12,11 +12,11 @@ const Paintings = () => {
     [PAINTINGS]
   );
   return (
-    <>
-      <section className="container flex gap-8 justify-center flex-wrap mt-10 mobile:mt-[40px]">
+    <section className="container">
+      <section className="flex gap-8 justify-center flex-wrap mt-[75px] mobile:mt-[40px]">
         {renderPaintings}
       </section>
-    </>
+    </section>
   );
 };
 

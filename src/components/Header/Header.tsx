@@ -31,7 +31,7 @@ const Header = () => {
           href={"/"}
         >
           <img
-            className="w-[130px] mobile:w-[72px]"
+            className="w-[130px] mobile:w-[80px]"
             src="/logo.svg"
             alt="logo"
           />
