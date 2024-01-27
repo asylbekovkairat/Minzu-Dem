@@ -13,10 +13,10 @@ const PaintingCard = ({
 }: IPainting) => {
   const { d, width, height } = sizes;
   return (
-    <div className="w-[256px] h-[452px] mobile:w-[140px] mobile:h-auto flex flex-col gap-6">
+    <div className="w-[256px] mobile:w-[140px] mobile:h-auto flex flex-col gap-6">
       <Link className="relative group" href={`/pages/painting-detail/${id}`}>
         <Image
-          className="mobile:w-[140px]"
+          className="mobile:w-[140px] max-h-[320px]"
           src={mainImage}
           alt="untitled 5"
           width={320}

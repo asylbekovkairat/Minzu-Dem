@@ -31,7 +31,7 @@ const Footer = () => {
         </div> */}
 
           <div className="flex items-center gap-[12px]">
-            <Link href="https://www.instagram.com/minzu.13/" target="_blank">
+            <Link href="https://www.instagram.com/minzudem/" target="_blank">
               <InstagramIcon size={25} />
             </Link>
             <EmailOutlineIcon size={25} />
