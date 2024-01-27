@@ -9,16 +9,13 @@ interface IProps {
 const Modal = ({ isOpen, onClose, children }: PropsWithChildren<IProps>) => {
   useEffect(() => {
     if (isOpen) {
-      document.body.style.overflowY = "hidden";
-      document.body.style.position = "fixed";
+      document.body.classList.add("lock-position");
     } else {
-      document.body.style.overflowY = "auto";
-      document.body.style.position = "unset";
+      document.body.classList.add("lock-position");
     }
 
     return () => {
-      document.body.style.overflowY = "auto";
-      document.body.style.position = "unset";
+      document.body.classList.add("lock-position");
     };
   }, [isOpen]);
   return (
