@@ -11,11 +11,11 @@ const Modal = ({ isOpen, onClose, children }: PropsWithChildren<IProps>) => {
     if (isOpen) {
       document.body.classList.add("lock-position");
     } else {
-      document.body.classList.add("lock-position");
+      document.body.classList.remove("lock-position");
     }
 
     return () => {
-      document.body.classList.add("lock-position");
+      document.body.classList.remove("lock-position");
     };
   }, [isOpen]);
   return (
