@@ -23,7 +23,10 @@ const Modal = ({ isOpen, onClose, children }: PropsWithChildren<IProps>) => {
       className={`fixed inset-0 flex justify-center items-center transition-colors duration-1000 ease-in-out z-50 ${
         isOpen ? "visible bg-black/40" : "invisible"
       }`}
-      onClick={onClose}
+      onClick={(event) => {
+        event.preventDefault();
+        onClose();
+      }}
     >
       <div
         className={`

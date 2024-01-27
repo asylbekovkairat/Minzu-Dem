@@ -160,7 +160,7 @@ const PaintingDetail = () => {
       </Modal>
       <Modal isOpen={!!paintingModal} onClose={handleCloseModal}>
         <img
-          className="max-w-[500px] max-h-[500px]"
+          className="w-full max-h-[500px]"
           src={paintingModal}
           alt="detailed painting"
         />

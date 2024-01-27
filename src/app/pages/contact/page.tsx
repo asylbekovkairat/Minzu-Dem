@@ -47,7 +47,7 @@ const Contact = () => {
             <label>Email</label>
             <input
               className="px-[18px] py-[10px] border-[#ccc] border-2 rounded-sm"
-              type="text"
+              type="email"
               value={email}
               onChange={(event) => setEmail(event.target.value)}
             />
