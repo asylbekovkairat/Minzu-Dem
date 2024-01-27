@@ -13,12 +13,11 @@
 
   padding: 0px 55px;
 }
-
-@media only screen and (max-width: 749px) {
-  .container {
-    padding-left: 22px;
-    padding-right: 22px;
-  }
+body.lock-position {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
 }
 
 .link:hover {
@@ -27,12 +26,6 @@
 
 .details-slider {
   display: none !important;
-}
-
-@media only screen and (max-width: 475px) {
-  .details-slider {
-    display: block !important;
-  }
 }
 
 .menuBtn {
@@ -111,4 +104,16 @@
 }
 .content.active {
   transform: translateY(0%);
+}
+
+@media only screen and (max-width: 749px) {
+  .container {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+}
+@media only screen and (max-width: 475px) {
+  .details-slider {
+    display: block !important;
+  }
 }
