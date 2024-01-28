@@ -2,6 +2,7 @@
 import { Metadata } from "next";
 import React, { RefObject, useState } from "react";
 import { sendContactRequest } from "src/services/email";
+import { sendNotification } from "src/services/notification";
 
 const metadata: Metadata = {
   title: "Minzu Dem | Contact Me",
@@ -10,10 +11,14 @@ const metadata: Metadata = {
 const Contact = () => {
   const formRef = React.createRef<HTMLFormElement>();
 
-  const handleSubmit = (event: any) => {
+  const handleSubmit = async (event: any) => {
     event?.preventDefault();
-    sendContactRequest(formRef.current);
-    event.target.reset();
+    const isRequestSent = await sendContactRequest(formRef.current);
+    if (isRequestSent) {
+      event.target.reset();
+      const response = await sendNotification("kairat", "as@mail.com");
+      console.log(response);
+    }
   };
 
   return (

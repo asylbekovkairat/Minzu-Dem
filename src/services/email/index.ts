@@ -2,12 +2,14 @@ import emailjs from "@emailjs/browser";
 
 export const sendPaintRequest = (data: any) => {
   try {
-    emailjs.sendForm(
-      "service_jtg0j0q",
-      "template_db8xuxk",
-      data,
-      "IkxkhKiMXnAXFp_3h"
-    );
+    emailjs
+      .sendForm(
+        "service_jtg0j0q",
+        "template_db8xuxk",
+        data,
+        "IkxkhKiMXnAXFp_3h"
+      )
+      .then((res) => res.status);
   } catch (error: any) {
     console.log(error);
 
@@ -23,6 +25,7 @@ export const sendContactRequest = (data: any) => {
       data,
       "IkxkhKiMXnAXFp_3h"
     );
+    return true;
   } catch (error: any) {
     throw new Error(error);
   }
