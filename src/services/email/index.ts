@@ -1,15 +1,29 @@
 import emailjs from "@emailjs/browser";
 
-export const sendEmail = (data: any, resetForm: () => void) => {
+export const sendPaintRequest = (data: any) => {
   try {
-    emailjs.send(
-      "service_rxp4pe5",
-      "template_90fb6xp",
+    emailjs.sendForm(
+      "service_jtg0j0q",
+      "template_db8xuxk",
       data,
-      "jjshbvx0cg2ZaZ7uj"
+      "IkxkhKiMXnAXFp_3h"
     );
-    resetForm();
   } catch (error: any) {
-    console.log("Something went wrong. Please try again");
+    console.log(error);
+
+    throw new Error(error);
+  }
+};
+
+export const sendContactRequest = (data: any) => {
+  try {
+    emailjs.sendForm(
+      "service_jtg0j0q",
+      "template_j7nzjm8",
+      data,
+      "IkxkhKiMXnAXFp_3h"
+    );
+  } catch (error: any) {
+    throw new Error(error);
   }
 };

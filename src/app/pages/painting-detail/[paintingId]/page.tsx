@@ -2,7 +2,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useParams } from "next/navigation";
-import { useEffect, useMemo, useState } from "react";
+import React, { RefObject, useEffect, useMemo, useRef, useState } from "react";
 import { IPainting, PAINTINGS } from "src/constants";
 import { Pagination, Scrollbar } from "swiper/modules";
 import "swiper/css";
@@ -11,6 +11,7 @@ import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/scrollbar";
 import Modal from "src/components/Modal";
+import { sendPaintRequest } from "src/services/email";
 
 const PaintingDetail = () => {
   const { paintingId } = useParams();
@@ -18,9 +19,9 @@ const PaintingDetail = () => {
   const [imageToShow, setImageToShow] = useState<string | undefined>(
     currentPaint?.mainImage
   );
+  const formRef = React.createRef<HTMLFormElement>();
 
   const [inquiryModal, setInquiryModal] = useState<boolean>(false);
-  const [paintingModal, setPaintingModal] = useState<string | undefined>("");
 
   useEffect(() => {
     setImageToShow(currentPaint?.mainImage);
@@ -51,14 +52,16 @@ const PaintingDetail = () => {
     [currentPaint?.images]
   );
 
-  const handleCloseModal = () => {
-    setInquiryModal(false);
-    setPaintingModal("");
+  const sendEmail = (event: any) => {
+    event?.preventDefault();
+    sendPaintRequest(formRef.current);
+    event.target.reset();
+    handleCloseModal();
   };
-  const handleOpenModal = () => setInquiryModal(true);
 
-  const openPaintingModal = (paintingSrc: string | undefined) =>
-    setPaintingModal(paintingSrc);
+  const handleCloseModal = () => setInquiryModal(false);
+
+  const handleOpenModal = () => setInquiryModal(true);
 
   return (
     <div className="container">
@@ -68,12 +71,7 @@ const PaintingDetail = () => {
             {renderImages}
           </div>
           <div className="relative w-full max-h-[500px]  h-[500px] flex justify-center pr-7 mobile:pr-0">
-            <img
-              className="h-full mobile:hidden"
-              src={imageToShow}
-              alt=""
-              onClick={() => openPaintingModal(imageToShow)}
-            />
+            <img className="h-full mobile:hidden" src={imageToShow} alt="" />
             <Swiper
               scrollbar={{
                 hide: false,
@@ -86,11 +84,7 @@ const PaintingDetail = () => {
                   key={id}
                   style={{ display: "flex", justifyContent: "center" }}
                 >
-                  <img
-                    src={src}
-                    alt={src}
-                    onClick={() => openPaintingModal(src)}
-                  />
+                  <img src={src} alt={src} />
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -134,36 +128,36 @@ const PaintingDetail = () => {
         </section>
       </main>
       <Modal isOpen={inquiryModal} onClose={handleCloseModal}>
-        <form className="m-3 flex flex-col gap-2">
+        <form
+          className="m-3 flex flex-col gap-2"
+          ref={formRef as unknown as RefObject<HTMLFormElement>}
+          onSubmit={sendEmail}
+        >
           <h3>Please, leave your contact data</h3>
           <input
             className="w-full px-[12px] py-[8px] border-[#ccc] border-2 rounded-sm"
             placeholder="Your Name"
             type="text"
+            name="from_name"
           />
           <input
             className="w-full px-[12px] py-[8px] border-[#ccc] border-2 rounded-sm"
             placeholder="Your Email"
             type="text"
+            name="from_email"
           />
           <textarea
             className="h-24 w-full px-[12px] py-[10px] border-[#ccc] border-2 rounded-sm"
             placeholder="Your message"
+            name="message"
           />
           <button
             className="max-w-32 uppercase rounded-s-none rounded-e-sm px-[18px] py-[10px] bg-[#3a3a3a] text-white font-bold tracking-[0.15em]"
-            type="button"
+            type="submit"
           >
             Send
           </button>
         </form>
-      </Modal>
-      <Modal isOpen={!!paintingModal} onClose={handleCloseModal}>
-        <img
-          className="w-full max-h-[500px]"
-          src={paintingModal}
-          alt="detailed painting"
-        />
       </Modal>
     </div>
   );

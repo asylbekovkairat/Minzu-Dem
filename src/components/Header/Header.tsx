@@ -3,6 +3,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { LiaShoppingBagSolid as ShoppingBagIcon } from "react-icons/lia";
 import React, { useEffect, useState } from "react";
+import { FaInstagram as InstagramIcon } from "react-icons/fa";
+import { MdOutlineEmail as EmailOutlineIcon } from "react-icons/md";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -67,9 +69,17 @@ const Header = () => {
           </Link>
         </nav>
 
-        <div className="flex items-center gap-5 hidden mobile:block">
-          <p className="hidden">EN</p>
-          <ShoppingBagIcon className="hidden" size={25} />
+        {/* <div className="flex items-center gap-[12px]">
+          <Link href="https://www.instagram.com/minzudem/" target="_blank">
+            <InstagramIcon size={25} />
+          </Link>
+          <EmailOutlineIcon size={25} />
+        </div> */}
+        <div className="flex items-center gap-5">
+          <p>EN</p>
+          <Link href="https://www.instagram.com/minzudem/" target="_blank">
+            <InstagramIcon size={25} />
+          </Link>{" "}
           <div className="hidden tablet:block">
             <div
               className={`menuBtn ${isOpen ? "active" : ""}`}
