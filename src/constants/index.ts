@@ -23,6 +23,166 @@ export interface IPainting {
 
 export const PAINTINGS: Array<IPainting> = [
   {
+    id: 1,
+    mainImage:
+      "https://images.saatchiart.com/saatchi/2336329/art/11138819/10201095-GWMFPTNP-7.jpg",
+    images: [
+      {
+        id: 2,
+        src: "/paintings/111/main.JPG",
+      },
+      {
+        id: 1,
+        src: "https://images.saatchiart.com/saatchi/2336329/art/11138819/additional_59f12d4698ac8c2dde576c4c4714c5c7140bf387-AICC2-7.jpg",
+      },
+      {
+        id: 3,
+        src: "https://images.saatchiart.com/saatchi/2336329/art/11138819/10201095-GWMFPTNP-7.jpg",
+      },
+    ],
+    price: 100000,
+    currency: "EUR",
+    description:
+      "1+11=111 is an original Minzu Dem oil on canvas painting in soothing bright pastel colors. It conveys the essence of flame hearts, when souls are the same, creating a new world of love and balance.",
+    sizes: {
+      width: 105,
+      height: 119,
+      d: 2.5,
+    },
+    paintingType: "Painting, Oil on Canvas",
+    title: "1+11=111",
+  },
+  {
+    id: 2,
+    price: 55000,
+    currency: "EUR",
+    description:
+      "The painting is painted in oil on canvas. Over time, people who saw the paintings always wondered, is this cat flying in the sky, swimming in the sea or just dancing? what do you think? what will be your choice?",
+    sizes: {
+      width: 105,
+      height: 177,
+      d: 3,
+    },
+    paintingType: "Painting, Oil on Canvas",
+    title: "Happy 2023.",
+    mainImage:
+      "https://images.saatchiart.com/saatchi/2336329/art/11134919/10197195-CIQVQUHU-6.jpg",
+    images: [
+      {
+        id: 4,
+        src: "https://images.saatchiart.com/saatchi/2336329/art/11134919/10197195-CIQVQUHU-6.jpg",
+      },
+      {
+        id: 1,
+        src: "https://images.saatchiart.com/saatchi/2336329/art/11134919/additional_2e10ac2c9cfca5b5c11b528cfbe33e77f6b6b28b-AICC2-7.jpg",
+      },
+      {
+        id: 2,
+        src: "https://images.saatchiart.com/saatchi/2336329/art/11134919/additional_1b9a3c29a964ef7a1e5c0d9d944767ed361adc64-AICC2-7.jpg",
+      },
+      {
+        id: 3,
+        src: "https://images.saatchiart.com/saatchi/2336329/art/11134919/additional_685d358bd6d200218a3e5bf520dc7a5ca75cb091-AICC2-7.jpg",
+      },
+    ],
+  },
+
+  {
+    id: 15,
+    mainImage:
+      "https://images.saatchiart.com/saatchi/2336329/art/11138319/additional_30e13c781d4ff28b2af18ec2e8c55c41c1243e13-AICC2-8.jpg",
+    images: [
+      {
+        id: 1,
+        src: "https://images.saatchiart.com/saatchi/2336329/art/11138319/additional_60dec5969e61d4856a6da24fc09f14c2fdfdec45-AICC2-8.jpg",
+      },
+      {
+        id: 2,
+        src: "https://images.saatchiart.com/saatchi/2336329/art/11138319/additional_56ee3e2b0458a8817e1bb3ecb5bc4dc3329972f3-AICC2-8.jpg",
+      },
+      {
+        id: 3,
+        src: "https://images.saatchiart.com/saatchi/2336329/art/11138319/additional_8bcaf04c25063b919ac0142c390dc556c07e1b0e-AICC2-8.jpg",
+      },
+      {
+        id: 4,
+        src: "https://images.saatchiart.com/saatchi/2336329/art/11138319/additional_30e13c781d4ff28b2af18ec2e8c55c41c1243e13-AICC2-8.jpg",
+      },
+      {
+        id: 5,
+        src: "https://images.saatchiart.com/saatchi/2336329/art/11138319/additional_8d5b859eeb28a816308748c00e01a57eba4e11e0-AICC2-8.jpg  ",
+      },
+    ],
+    price: 17665,
+    currency: "EUR",
+    description: [
+      "Ancient Blue is an original Minzu Dem oil on canvas painting in soothing bright pastel colors. An abstract expressionist painting in which layers of thick paint are applied with brushes and other tools. It captures the essence of the ocean, sun and fields, merging into a soothing sense of peace that delights the senses and soothes the mind.",
+    ],
+    sizes: {
+      width: 100,
+      height: 150,
+      d: 3,
+    },
+    paintingType: "Oil on canvas",
+    title: "Ancient Blue",
+  },
+  {
+    id: 6,
+    mainImage:
+      "https://images.saatchiart.com/saatchi/2336329/art/11098139/10160419-LHDVNIGA-7.jpg",
+    images: [
+      {
+        id: 1,
+        src: "https://images.saatchiart.com/saatchi/2336329/art/11098139/10160419-LHDVNIGA-7.jpg",
+      },
+      {
+        id: 2,
+        src: "https://images.saatchiart.com/saatchi/2336329/art/11098139/additional_981004bc558c7642a7aab44f9a08c7f8e8ad7e5f-AICC2-7.jpg",
+      },
+      {
+        id: 3,
+        src: "https://images.saatchiart.com/saatchi/2336329/art/11098139/additional_f07e2df4ddd91ae916ebe4742b5b6b7e4c946ab2-AICC2-7.jpg",
+      },
+    ],
+    price: 16880,
+    currency: "EUR",
+    description:
+      "This painting is about how important it is to know your roots, your history, because even a small branch can break all the frames that you have built or accepted. ",
+    sizes: {
+      width: 100,
+      height: 150,
+      d: 3,
+    },
+    paintingType: "Oil, acrylic, pastel on canvas",
+    title: "Branch of Freedom",
+  },
+  {
+    id: 8,
+    mainImage:
+      "https://images.saatchiart.com/saatchi/2336329/art/11119461/10181737-UHEUQZOS-7.jpg",
+    images: [
+      {
+        id: 1,
+        src: "https://images.saatchiart.com/saatchi/2336329/art/11119461/10181737-UHEUQZOS-7.jpg",
+      },
+      {
+        id: 2,
+        src: "https://images.saatchiart.com/saatchi/2336329/art/11119461/additional_f18096be635c8fc007a774d4b872ecfd19ae051f-AICC2-7.jpg",
+      },
+    ],
+    price: 999,
+    currency: "EUR",
+    description:
+      "The painting was painted with acrylic paints on canvas, the painting came to the author in a dream, it looked like different forms of energy and in the form of doors of different colors, the author believes that by opening one main door, you gain access to all the others, the work was written in 2021 on the shore of Lake Issyk -Kul.",
+    sizes: {
+      width: 60,
+      height: 90,
+      d: 2,
+    },
+    paintingType: "Painting, Acrylic on Canvas",
+    title: "Doors",
+  },
+  {
     id: 7,
     mainImage:
       "https://images.saatchiart.com/saatchi/2336329/art/11134567/10196843-GHXOZZWC-7.jpg",
@@ -93,102 +253,6 @@ export const PAINTINGS: Array<IPainting> = [
     },
     paintingType: "Painting, Oil on Canvas",
     title: "Untitled 2",
-  },
-  {
-    id: 15,
-    mainImage:
-      "https://images.saatchiart.com/saatchi/2336329/art/11138319/additional_30e13c781d4ff28b2af18ec2e8c55c41c1243e13-AICC2-8.jpg",
-    images: [
-      {
-        id: 1,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11138319/additional_60dec5969e61d4856a6da24fc09f14c2fdfdec45-AICC2-8.jpg",
-      },
-      {
-        id: 2,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11138319/additional_56ee3e2b0458a8817e1bb3ecb5bc4dc3329972f3-AICC2-8.jpg",
-      },
-      {
-        id: 3,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11138319/additional_8bcaf04c25063b919ac0142c390dc556c07e1b0e-AICC2-8.jpg",
-      },
-      {
-        id: 4,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11138319/additional_30e13c781d4ff28b2af18ec2e8c55c41c1243e13-AICC2-8.jpg",
-      },
-      {
-        id: 5,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11138319/additional_8d5b859eeb28a816308748c00e01a57eba4e11e0-AICC2-8.jpg  ",
-      },
-    ],
-    price: 17665,
-    currency: "EUR",
-    description: [
-      "Ancient Blue is an original Minzu Dem oil on canvas painting in soothing bright pastel colors. An abstract expressionist painting in which layers of thick paint are applied with brushes and other tools. It captures the essence of the ocean, sun and fields, merging into a soothing sense of peace that delights the senses and soothes the mind.",
-    ],
-    sizes: {
-      width: 100,
-      height: 150,
-      d: 3,
-    },
-    paintingType: "Oil on canvas",
-    title: "Ancient Blue",
-  },
-  {
-    id: 8,
-    mainImage:
-      "https://images.saatchiart.com/saatchi/2336329/art/11119461/10181737-UHEUQZOS-7.jpg",
-    images: [
-      {
-        id: 1,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11119461/10181737-UHEUQZOS-7.jpg",
-      },
-      {
-        id: 2,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11119461/additional_f18096be635c8fc007a774d4b872ecfd19ae051f-AICC2-7.jpg",
-      },
-    ],
-    price: 999,
-    currency: "EUR",
-    description:
-      "The painting was painted with acrylic paints on canvas, the painting came to the author in a dream, it looked like different forms of energy and in the form of doors of different colors, the author believes that by opening one main door, you gain access to all the others, the work was written in 2021 on the shore of Lake Issyk -Kul.",
-    sizes: {
-      width: 60,
-      height: 90,
-      d: 2,
-    },
-    paintingType: "Painting, Acrylic on Canvas",
-    title: "Doors",
-  },
-
-  {
-    id: 1,
-    mainImage:
-      "https://images.saatchiart.com/saatchi/2336329/art/11138819/10201095-GWMFPTNP-7.jpg",
-    images: [
-      {
-        id: 2,
-        src: "/paintings/111/main.JPG",
-      },
-      {
-        id: 1,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11138819/additional_59f12d4698ac8c2dde576c4c4714c5c7140bf387-AICC2-7.jpg",
-      },
-      {
-        id: 3,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11138819/10201095-GWMFPTNP-7.jpg",
-      },
-    ],
-    price: 100000,
-    currency: "EUR",
-    description:
-      "1+11=111 is an original Minzu Dem oil on canvas painting in soothing bright pastel colors. It conveys the essence of flame hearts, when souls are the same, creating a new world of love and balance.",
-    sizes: {
-      width: 105,
-      height: 119,
-      d: 2.5,
-    },
-    paintingType: "Painting, Oil on Canvas",
-    title: "1+11=111",
   },
   {
     id: 3,
@@ -262,36 +326,6 @@ export const PAINTINGS: Array<IPainting> = [
     title: "Untitled 3",
   },
   {
-    id: 6,
-    mainImage:
-      "https://images.saatchiart.com/saatchi/2336329/art/11098139/10160419-LHDVNIGA-7.jpg",
-    images: [
-      {
-        id: 1,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11098139/10160419-LHDVNIGA-7.jpg",
-      },
-      {
-        id: 2,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11098139/additional_981004bc558c7642a7aab44f9a08c7f8e8ad7e5f-AICC2-7.jpg",
-      },
-      {
-        id: 3,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11098139/additional_f07e2df4ddd91ae916ebe4742b5b6b7e4c946ab2-AICC2-7.jpg",
-      },
-    ],
-    price: 16880,
-    currency: "EUR",
-    description:
-      "This painting is about how important it is to know your roots, your history, because even a small branch can break all the frames that you have built or accepted. ",
-    sizes: {
-      width: 100,
-      height: 150,
-      d: 3,
-    },
-    paintingType: "Oil, acrylic, pastel on canvas",
-    title: "Branch of Freedom",
-  },
-  {
     id: 4,
     mainImage:
       "https://images.saatchiart.com/saatchi/2336329/art/11124609/10186885-XGVAQZCN-7.jpg",
@@ -324,41 +358,6 @@ export const PAINTINGS: Array<IPainting> = [
     },
     paintingType: "Painting, Acrylic on Canvas",
     title: "Vedmerd",
-  },
-
-  {
-    id: 2,
-    price: 55000,
-    currency: "EUR",
-    description:
-      "The painting is painted in oil on canvas. Over time, people who saw the paintings always wondered, is this cat flying in the sky, swimming in the sea or just dancing? what do you think? what will be your choice?",
-    sizes: {
-      width: 105,
-      height: 177,
-      d: 3,
-    },
-    paintingType: "Painting, Oil on Canvas",
-    title: "Happy 2023.",
-    mainImage:
-      "https://images.saatchiart.com/saatchi/2336329/art/11134919/10197195-CIQVQUHU-6.jpg",
-    images: [
-      {
-        id: 4,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11134919/10197195-CIQVQUHU-6.jpg",
-      },
-      {
-        id: 1,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11134919/additional_2e10ac2c9cfca5b5c11b528cfbe33e77f6b6b28b-AICC2-7.jpg",
-      },
-      {
-        id: 2,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11134919/additional_1b9a3c29a964ef7a1e5c0d9d944767ed361adc64-AICC2-7.jpg",
-      },
-      {
-        id: 3,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11134919/additional_685d358bd6d200218a3e5bf520dc7a5ca75cb091-AICC2-7.jpg",
-      },
-    ],
   },
   {
     id: 12,

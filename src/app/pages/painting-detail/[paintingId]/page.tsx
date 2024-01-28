@@ -84,7 +84,7 @@ const PaintingDetail = () => {
                   key={id}
                   style={{ display: "flex", justifyContent: "center" }}
                 >
-                  <img src={src} alt={src} />
+                  <img src={src} alt={src} className="object-contain" />
                 </SwiperSlide>
               ))}
             </Swiper>
