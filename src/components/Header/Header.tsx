@@ -76,10 +76,14 @@ const Header = () => {
           <EmailOutlineIcon size={25} />
         </div> */}
         <div className="flex items-center gap-5">
-          <p>EN</p>
-          <Link href="https://www.instagram.com/minzudem/" target="_blank">
+          <p className="hidden">EN</p>
+          <Link
+            className="mobile:hidden"
+            href="https://www.instagram.com/minzudem/"
+            target="_blank"
+          >
             <InstagramIcon size={25} />
-          </Link>{" "}
+          </Link>
           <div className="hidden tablet:block">
             <div
               className={`menuBtn ${isOpen ? "active" : ""}`}
@@ -137,6 +141,13 @@ const Header = () => {
               onClick={closeMenu}
             >
               Contact Me
+            </Link>
+            <Link
+              className=""
+              href="https://www.instagram.com/minzudem/"
+              target="_blank"
+            >
+              <InstagramIcon size={25} />
             </Link>
           </nav>
         </section>
