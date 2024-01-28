@@ -568,7 +568,7 @@ export const PAINTINGS: Array<IPainting> = [
         src: "https://images.saatchiart.com/saatchi/2336329/art/11125137/additional_0f52a7a4224b20a8d655a9e212aea5e07c88a184-AICC2-8.jpg",
       },
     ],
-    price: 3602,
+    price: 192887,
     currency: "EUR",
     description: [
       "The painting 'Andy Warhol on the wall' was created using oil paints on canvas. The author was struck by the very empty expression on a wall and decided to capture it on canvas. Almost every viewer, when looking at the painting, begins to feel a wild fear and emptiness, and the author is no exception. Even during the photo shoot, he became scared and wanted to finish it as quickly as possible.",
