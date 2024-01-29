@@ -11,7 +11,7 @@ export const sendNotification = async (
         Accept: "application/json",
       },
       body: JSON.stringify({
-        apiKey: "6a02bcfa-c05f-4b0e-911d-55c79e361fba",
+        apiKey: "64ea6f78-e37e-4786-bf6b-6914d4455214",
         message: `New message from ${fromName}! Their Email - ${fromEmail}`,
         description: `Message: ${message || "empty"}`,
         body: "asd",
