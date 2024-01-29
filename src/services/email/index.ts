@@ -10,9 +10,8 @@ export const sendPaintRequest = (data: any) => {
         "IkxkhKiMXnAXFp_3h"
       )
       .then((res) => res.status);
+    return true;
   } catch (error: any) {
-    console.log(error);
-
     throw new Error(error);
   }
 };

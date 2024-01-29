@@ -2,7 +2,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useParams } from "next/navigation";
-import React, { RefObject, useEffect, useMemo, useRef, useState } from "react";
+import React, { RefObject, useEffect, useMemo, useState } from "react";
 import { IPainting, PAINTINGS } from "src/constants";
 import { Pagination, Scrollbar } from "swiper/modules";
 import "swiper/css";
@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/scrollbar";
 import Modal from "src/components/Modal";
-import { sendContactRequest, sendPaintRequest } from "src/services/email";
+import { sendPaintRequest } from "src/services/email";
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import { PaintingFormValidation } from "./PaintingForm.schema";
 import { sendNotification } from "src/services/notification";
@@ -73,7 +73,7 @@ const PaintingDetail = () => {
   );
 
   const handleSubmit = async (values: any, { resetForm }: any) => {
-    const isRequestSent = sendContactRequest(formRef.current);
+    const isRequestSent = sendPaintRequest(formRef.current);
     if (isRequestSent) {
       setInquiryModal(false);
       setRequestResult({ isModalOpen: true, isSuccess: true });
