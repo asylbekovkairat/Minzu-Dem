@@ -417,10 +417,14 @@ export const PAINTINGS: Array<IPainting> = [
   {
     id: 11,
     mainImage:
-      "https://images.saatchiart.com/saatchi/2336329/art/11134337/additional_57ca1fb9ab41fa1dc39926c11040ed8184b2d1ae-AICC2-8.jpg",
+      "https://images.saatchiart.com/saatchi/2336329/art/11134337/additional_8b2d8fc442f639d549a4749be3a058fbf9fc5327-AICC2-7.jpg",
     images: [
       {
         id: 1,
+        src: "https://images.saatchiart.com/saatchi/2336329/art/11134337/additional_8b2d8fc442f639d549a4749be3a058fbf9fc5327-AICC2-7.jpg",
+      },
+      {
+        id: 6,
         src: "https://images.saatchiart.com/saatchi/2336329/art/11134337/additional_99225dab29c9ecb7a1905a1dc3842d936cfb4c68-AICC2-8.jpg",
       },
       {
