@@ -292,7 +292,7 @@ export const PAINTINGS: Array<IPainting> = [
       d: 2.5,
     },
     paintingType: "Painting, Oil on Canvas",
-    title: "Darkness all ways gives space for light Painting",
+    title: "Darkness all ways gives space for light",
     year: 2023,
   },
   {
