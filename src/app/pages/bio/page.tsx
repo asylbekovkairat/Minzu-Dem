@@ -12,24 +12,28 @@ const Bio = () => {
       <section className="flex gap-12 mt-[75px] mobile:flex-col-reverse mobile:mt-11 mobile:mb-20">
         <div className="flex flex-col gap-6 text-lg mb-7">
           <p>
-            A young artist working in the style of abstractionism, he possesses
-            incredible talent and passion for his art. He sees his paintings as
-            living beings, capable of evoking emotions and influencing the
-            surrounding space. His works reflect his inner world, his emotions
-            and thoughts, and he hopes that they can heal and inspire people.
+            Minzu (b. 1998) is a burgeoning artist dedicated to the genre of
+            abstractionism. He perceives his canvases as sentient entities,
+            capable of eliciting emotions and exerting influence on their
+            surrounding environment. His artistic creations serve as a
+            reflection of his innermost thoughts and emotions, with the
+            aspiration that they may serve as a source of healing and
+            inspiration for those who engage with them.
           </p>
           <p>
-            His paintings are in beautiful homes, private collections, and
-            galleries. He strives to create works that will have a deep
-            emotional impact on viewers and leave an indelible mark on their
-            hearts.
+            The artist's paintings are currently housed in private collections
+            and art galleries. His overarching goal is to craft pieces that
+            resonate deeply with viewers.
           </p>
           <p>
-            This young artist experiments with different techniques and
-            materials to achieve the desired effect in his works. He plays with
-            light, shadow, colors, and textures to create dynamic and mysterious
-            compositions that will pique the interest and admiration of viewers.
+            In his pursuit of artistic excellence, Minzu engages in
+            experimentation with various techniques and materials to attain the
+            desired effects in his works. Through manipulation of light, shadow,
+            colors, and textures, he skillfully constructs dynamic and enigmatic
+            compositions intended to captivate the interest and admiration of
+            spectators.
           </p>
+          <p>Lives and works in Bishkek, Kyrgyzstan.</p>
         </div>
         <div className="w-full">
           <Image
