@@ -9,32 +9,14 @@ const Footer = () => {
     <div className="container">
       <footer className="flex flex-col mt-[100px] mb-7 mobile:mb-10 mobile:mt-20">
         <span className="bg-[#3a3a3a] h-[1px] mb-6 mt-20" />
-        {/* <section className="flex justify-between mb-16 gap-10 md:flex-col">
-        <div className="flex flex-col items-start gap-5">
-          <p className="font-bold">Be notified when new items drop</p>
-          <div className="flex md:w-full mobile:flex-col">
-            <input
-              className="mobile:mb-2 grow-[9999] w-[500px] px-[18px] py-[9px] bg-white border-[#ccc] border-2 rounded-sm mobileMin:border-r-0 rounded-e-none lg:w-[350px] md:w-full"
-              type="text"
-              placeholder="Email address"
-            />
-            <button className="uppercase rounded-s-none rounded-e-sm px-[18px] py-[10px] bg-[#3a3a3a] text-white font-bold tracking-[0.15em]">
-              Subscribe
-            </button>
-          </div>
-        </div>
-      </section> */}
         <div className="flex justify-center items-center">
-          {/* <div className="flex items-center gap-[12px]">
-          <ApplePayIcon size={35} />
-          <VisaIcon size={35} color="rgb(20, 38, 136)" />
-        </div> */}
-
           <div className="flex items-center gap-[12px]">
             <Link href="https://www.instagram.com/minzudem/" target="_blank">
               <InstagramIcon size={25} />
             </Link>
-            <EmailOutlineIcon size={25} />
+            <Link href="mailto:minzudem@gmail.com">
+              <EmailOutlineIcon size={25} />
+            </Link>
           </div>
         </div>
         <div className="flex justify-between items-center mt-[25px] middle:flex-col gap-3">

@@ -19,6 +19,7 @@ export interface IPainting {
   sizes: Size;
   paintingType: string;
   title: string;
+  year: number;
 }
 
 export const PAINTINGS: Array<IPainting> = [
@@ -51,6 +52,7 @@ export const PAINTINGS: Array<IPainting> = [
     },
     paintingType: "Painting, Oil on Canvas",
     title: "1+11=111",
+    year: 2023,
   },
   {
     id: 2,
@@ -64,7 +66,7 @@ export const PAINTINGS: Array<IPainting> = [
       d: 3,
     },
     paintingType: "Painting, Oil on Canvas",
-    title: "Happy 2023.",
+    title: "Happy",
     mainImage:
       "https://images.saatchiart.com/saatchi/2336329/art/11134919/10197195-CIQVQUHU-6.jpg",
     images: [
@@ -85,6 +87,7 @@ export const PAINTINGS: Array<IPainting> = [
         src: "https://images.saatchiart.com/saatchi/2336329/art/11134919/additional_685d358bd6d200218a3e5bf520dc7a5ca75cb091-AICC2-7.jpg",
       },
     ],
+    year: 2023,
   },
 
   {
@@ -125,6 +128,7 @@ export const PAINTINGS: Array<IPainting> = [
     },
     paintingType: "Oil on canvas",
     title: "Ancient Blue",
+    year: 2023,
   },
   {
     id: 6,
@@ -155,6 +159,7 @@ export const PAINTINGS: Array<IPainting> = [
     },
     paintingType: "Oil, acrylic, pastel on canvas",
     title: "Branch of Freedom",
+    year: 2022,
   },
   {
     id: 8,
@@ -181,6 +186,7 @@ export const PAINTINGS: Array<IPainting> = [
     },
     paintingType: "Painting, Acrylic on Canvas",
     title: "Doors",
+    year: 2021,
   },
   {
     id: 7,
@@ -219,6 +225,7 @@ export const PAINTINGS: Array<IPainting> = [
     },
     paintingType: "Painting, Oil on Canvas",
     title: "Holding the whole planet",
+    year: 2023,
   },
   {
     id: 5,
@@ -253,6 +260,7 @@ export const PAINTINGS: Array<IPainting> = [
     },
     paintingType: "Painting, Oil on Canvas",
     title: "Untitled 2",
+    year: 2023,
   },
   {
     id: 3,
@@ -285,6 +293,7 @@ export const PAINTINGS: Array<IPainting> = [
     },
     paintingType: "Painting, Oil on Canvas",
     title: "Darkness all ways gives space for light Painting",
+    year: 2023,
   },
   {
     id: 10,
@@ -324,6 +333,7 @@ export const PAINTINGS: Array<IPainting> = [
     },
     paintingType: "Pastel on Canvas",
     title: "Untitled 3",
+    year: 2022,
   },
   {
     id: 4,
@@ -358,6 +368,7 @@ export const PAINTINGS: Array<IPainting> = [
     },
     paintingType: "Painting, Acrylic on Canvas",
     title: "Vedmerd",
+    year: 2023,
   },
   {
     id: 12,
@@ -401,6 +412,7 @@ export const PAINTINGS: Array<IPainting> = [
     },
     paintingType: "Oil, Pastel on canvas",
     title: "Cheer",
+    year: 2023,
   },
   {
     id: 11,
@@ -440,6 +452,7 @@ export const PAINTINGS: Array<IPainting> = [
     },
     paintingType: "Oil, Charcoal, Pastel on canvas",
     title: "Roots",
+    year: 2022,
   },
 
   {
@@ -481,7 +494,8 @@ export const PAINTINGS: Array<IPainting> = [
       d: 3,
     },
     paintingType: "Painting, Oil on Canvas",
-    title: "Kyrgyz Shaman, 2022",
+    title: "Kyrgyz Shaman",
+    year: 2023,
   },
   {
     id: 14,
@@ -513,6 +527,7 @@ export const PAINTINGS: Array<IPainting> = [
     },
     paintingType: "Oil on canvas",
     title: "Untitled 5",
+    year: 2022,
   },
   {
     id: 13,
@@ -544,6 +559,7 @@ export const PAINTINGS: Array<IPainting> = [
     },
     paintingType: "Oil on canvas",
     title: "Untitled",
+    year: 2022,
   },
   {
     id: 17,
@@ -579,5 +595,6 @@ export const PAINTINGS: Array<IPainting> = [
     },
     paintingType: "Oil on canvas",
     title: "Andy Warhol on the wall",
+    year: 2022,
   },
 ];

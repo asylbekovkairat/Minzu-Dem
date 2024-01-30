@@ -33,7 +33,7 @@ const Header = () => {
           href={"/"}
         >
           <img
-            className="w-[130px] mobile:w-[80px]"
+            className="w-[130px] mobile:w-[70px]"
             src="/logo.svg"
             alt="logo"
           />
@@ -68,13 +68,6 @@ const Header = () => {
             Contact Me
           </Link>
         </nav>
-
-        {/* <div className="flex items-center gap-[12px]">
-          <Link href="https://www.instagram.com/minzudem/" target="_blank">
-            <InstagramIcon size={25} />
-          </Link>
-          <EmailOutlineIcon size={25} />
-        </div> */}
         <div className="flex items-center gap-5">
           <p className="hidden">EN</p>
           <Link
