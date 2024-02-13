@@ -16,6 +16,7 @@ import { ErrorMessage, Field, Form, Formik } from "formik";
 import { PaintingFormValidation } from "./PaintingForm.schema";
 import { sendNotification } from "src/services/notification";
 import SuccessModal from "src/components/Modal/SuccessModal";
+import { formatPrice } from "src/helpers/formatPrice";
 
 const PaintingDetail = () => {
   const { paintingId } = useParams();
@@ -143,7 +144,8 @@ const PaintingDetail = () => {
                     cm
                   </p>
                   <p className="mt-3 mobile:mt-0">
-                    <strong>Price</strong>: &#x20ac;{currentPaint?.price}
+                    <strong>Price</strong>: &#x20ac;
+                    {currentPaint?.price && formatPrice(currentPaint.price)}
                   </p>
                   <p className="mt-[8px] text-[#bfbdbd]">Ships in a Box</p>
                 </div>
