@@ -25,8 +25,7 @@ export interface IPainting {
 export const PAINTINGS: Array<IPainting> = [
   {
     id: 1,
-    mainImage:
-      "https://images.saatchiart.com/saatchi/2336329/art/11138819/10201095-GWMFPTNP-7.jpg",
+    mainImage: "/paintings/111/1+11.JPG",
     images: [
       {
         id: 2,
@@ -38,7 +37,7 @@ export const PAINTINGS: Array<IPainting> = [
       },
       {
         id: 3,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11138819/10201095-GWMFPTNP-7.jpg",
+        src: "/paintings/111/1+11.JPG",
       },
     ],
     price: 100000,
@@ -567,12 +566,11 @@ export const PAINTINGS: Array<IPainting> = [
   },
   {
     id: 17,
-    mainImage:
-      "https://images.saatchiart.com/saatchi/2336329/art/11125137/10187413-IIZNLQPJ-7.jpg",
+    mainImage: "/paintings/AndyWarhol/1.JPG",
     images: [
       {
         id: 7,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11125137/10187413-IIZNLQPJ-7.jpg",
+        src: "/paintings/AndyWarhol/1.JPG",
       },
       {
         id: 1,
