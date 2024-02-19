@@ -33,7 +33,7 @@ export const PAINTINGS: Array<IPainting> = [
       },
       {
         id: 1,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11138819/additional_59f12d4698ac8c2dde576c4c4714c5c7140bf387-AICC2-7.jpg",
+        src: "/paintings/111/1+11_1.JPG",
       },
       {
         id: 3,
@@ -67,23 +67,23 @@ export const PAINTINGS: Array<IPainting> = [
     paintingType: "Painting, Oil on Canvas",
     title: "Happy",
     mainImage:
-      "https://images.saatchiart.com/saatchi/2336329/art/11134919/10197195-CIQVQUHU-6.jpg",
+      "/paintings/Happy/happy.JPG",
     images: [
       {
         id: 4,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11134919/10197195-CIQVQUHU-6.jpg",
+        src: "/paintings/Happy/happy.JPG",
       },
       {
         id: 1,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11134919/additional_2e10ac2c9cfca5b5c11b528cfbe33e77f6b6b28b-AICC2-7.jpg",
+        src: "/paintings/Happy/happy2.JPG",
       },
       {
         id: 2,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11134919/additional_1b9a3c29a964ef7a1e5c0d9d944767ed361adc64-AICC2-7.jpg",
+        src: "/paintings/Happy/happy3.JPG",
       },
       {
         id: 3,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11134919/additional_685d358bd6d200218a3e5bf520dc7a5ca75cb091-AICC2-7.jpg",
+        src: "/paintings/Happy/happy4.JPG",
       },
     ],
     year: 2023,
@@ -92,27 +92,27 @@ export const PAINTINGS: Array<IPainting> = [
   {
     id: 15,
     mainImage:
-      "https://images.saatchiart.com/saatchi/2336329/art/11138319/additional_30e13c781d4ff28b2af18ec2e8c55c41c1243e13-AICC2-8.jpg",
+      "/paintings/AncientBlue/ancient-blue.JPG",
     images: [
       {
         id: 1,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11138319/additional_60dec5969e61d4856a6da24fc09f14c2fdfdec45-AICC2-8.jpg",
+        src: "/paintings/AncientBlue/ancient-blue2.JPG",
       },
       {
         id: 2,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11138319/additional_56ee3e2b0458a8817e1bb3ecb5bc4dc3329972f3-AICC2-8.jpg",
+        src: "/paintings/AncientBlue/ancient-blue3.JPG",
       },
       {
         id: 3,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11138319/additional_8bcaf04c25063b919ac0142c390dc556c07e1b0e-AICC2-8.jpg",
+        src: "/paintings/AncientBlue/ancient-blue4.JPG",
       },
       {
         id: 4,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11138319/additional_30e13c781d4ff28b2af18ec2e8c55c41c1243e13-AICC2-8.jpg",
+        src: "/paintings/AncientBlue/ancient-blue.JPG",
       },
       {
         id: 5,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11138319/additional_8d5b859eeb28a816308748c00e01a57eba4e11e0-AICC2-8.jpg  ",
+        src: "/paintings/AncientBlue/ancient-blue5.JPG",
       },
     ],
     price: 17665,
@@ -132,19 +132,31 @@ export const PAINTINGS: Array<IPainting> = [
   {
     id: 6,
     mainImage:
-      "https://images.saatchiart.com/saatchi/2336329/art/11098139/10160419-LHDVNIGA-7.jpg",
+      "/paintings/Freedom/freedom.JPG",
     images: [
       {
         id: 1,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11098139/10160419-LHDVNIGA-7.jpg",
+        src: "/paintings/Freedom/freedom.JPG",
       },
       {
         id: 2,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11098139/additional_981004bc558c7642a7aab44f9a08c7f8e8ad7e5f-AICC2-7.jpg",
+        src: "/paintings/Freedom/freedom2.JPG",
       },
       {
         id: 3,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11098139/additional_f07e2df4ddd91ae916ebe4742b5b6b7e4c946ab2-AICC2-7.jpg",
+        src: "/paintings/Freedom/freedom3.JPG",
+      },
+      {
+        id: 4,
+        src: "/paintings/Freedom/freedom4.JPG",
+      },
+      {
+        id: 5,
+        src: "/paintings/Freedom/freedom5.JPG",
+      },
+      {
+        id: 6,
+        src: "/paintings/Freedom/freedom6.JPG",
       },
     ],
     price: 16880,
@@ -163,15 +175,15 @@ export const PAINTINGS: Array<IPainting> = [
   {
     id: 8,
     mainImage:
-      "https://images.saatchiart.com/saatchi/2336329/art/11119461/10181737-UHEUQZOS-7.jpg",
+      "/paintings/Doors/doors.JPG",
     images: [
       {
         id: 1,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11119461/10181737-UHEUQZOS-7.jpg",
+        src: "/paintings/Doors/doors.JPG",
       },
       {
         id: 2,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11119461/additional_f18096be635c8fc007a774d4b872ecfd19ae051f-AICC2-7.jpg",
+        src: "/paintings/Doors/doors2.JPG",
       },
     ],
     price: 999,
@@ -190,27 +202,27 @@ export const PAINTINGS: Array<IPainting> = [
   {
     id: 7,
     mainImage:
-      "https://images.saatchiart.com/saatchi/2336329/art/11134567/10196843-GHXOZZWC-7.jpg",
+      "/paintings/Kernel/kernel.JPG",
     images: [
       {
         id: 1,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11134567/10196843-GHXOZZWC-7.jpg",
+        src: "/paintings/Kernel/kernel.JPG",
       },
       {
         id: 2,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11134567/additional_7f6a8e3b1b4ad3c1dff5126e40532922c33ce084-AICC2-7.jpg",
+        src: "/paintings/Kernel/kernel2.JPG",
       },
       {
         id: 3,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11134567/additional_b928355e09758ba3f92b9dd99c473e71c780795b-AICC2-7.jpg",
+        src: "/paintings/Kernel/kernel3.JPG",
       },
       {
         id: 4,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11134567/additional_3ff92c48576ff1dde1e3c6c3fa971d6f2b4b92b7-AICC2-7.jpg",
+        src: "/paintings/Kernel/kernel4.JPG",
       },
       {
         id: 5,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11134567/additional_c9ef6f2cab60b3d062c381309336e1e6ac0cb0e4-AICC2-7.jpg",
+        src: "/paintings/Kernel/kernel5.JPG",
       },
     ],
     price: 14500,
@@ -229,23 +241,23 @@ export const PAINTINGS: Array<IPainting> = [
   {
     id: 5,
     mainImage:
-      "https://images.saatchiart.com/saatchi/2336329/art/11119517/10181793-BPBFEIXX-6.jpg",
+      "/paintings/AbstractImage/abstract-img.JPG",
     images: [
       {
         id: 1,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11119517/10181793-BPBFEIXX-6.jpg",
+        src: "/paintings/AbstractImage/abstract-img.JPG",
       },
       {
         id: 2,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11119517/additional_4294e0c7da87a94477f2ca38c2184a734343596e-AICC2-7.jpg",
+        src: "/paintings/AbstractImage/abstract-img2.JPG",
       },
       {
         id: 3,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11119517/additional_2ee4db0ebf8c1b0ea2fc8b6a96cbc2ece82ac211-AICC2-7.jpg",
+        src: "/paintings/AbstractImage/abstract-img3.JPG",
       },
       {
         id: 4,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11119517/additional_64a02f2de8101db1afb00c2690c3c82b31cfbefe-AICC2-7.jpg",
+        src: "/paintings/AbstractImage/abstract-img2.JPG",
       },
     ],
     price: 5450,
@@ -264,19 +276,19 @@ export const PAINTINGS: Array<IPainting> = [
   {
     id: 3,
     mainImage:
-      "https://images.saatchiart.com/saatchi/2336329/art/11119233/10181509-HQVUHYLR-7.jpg",
+      "/paintings/Light/light.JPG",
     images: [
       {
         id: 1,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11119233/10181509-HQVUHYLR-7.jpg",
+        src: "/paintings/Light/light.JPG",
       },
       {
         id: 2,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11119233/additional_569d9636f9d70a6ab2810b2c8d2224ceb3bb22ce-AICC2-7.jpg",
+        src: "/paintings/Light/light2.JPG",
       },
       {
         id: 3,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11119233/additional_ce6722cac617778721cadec7407c47619e751d52-AICC2-7.jpg",
+        src: "/paintings/Light/light3.JPG",
       },
     ],
     price: 4725,
@@ -297,27 +309,27 @@ export const PAINTINGS: Array<IPainting> = [
   {
     id: 10,
     mainImage:
-      "https://images.saatchiart.com/saatchi/2336329/art/11117595/10179871-BPZFRBKG-8.jpg",
+      "/paintings/AbstractPatterns/abstract-patterns.JPG",
     images: [
       {
         id: 1,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11117595/additional_ab68c37004de0f064a22d61385d79c849b9abc20-AICC2-8.jpg",
+        src: "/paintings/AbstractPatterns/abstract-patterns3.JPG",
       },
       {
         id: 2,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11117595/10179871-BPZFRBKG-8.jpg",
+        src: "/paintings/AbstractPatterns/abstract-patterns.JPG",
       },
       {
         id: 3,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11117595/additional_d0e4e9b5fa207b4929f5d0380c4d5d53ec80ca86-AICC2-8.jpg",
+        src: "/paintings/AbstractPatterns/abstract-patterns2.JPG",
       },
       {
         id: 4,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11117595/additional_49006c7b218bf58ec987254b98cfcf98c4c0d37d-AICC2-8.jpg",
+        src: "/paintings/AbstractPatterns/abstract-patterns4.JPG",
       },
       {
         id: 5,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11117595/additional_c335e97d39e448276f71288d3ff9216f8190b9f1-AICC2-8.jpg",
+        src: "/paintings/AbstractPatterns/abstract-patterns2.JPG",
       },
     ],
     price: 1660,
@@ -337,19 +349,19 @@ export const PAINTINGS: Array<IPainting> = [
   {
     id: 4,
     mainImage:
-      "https://images.saatchiart.com/saatchi/2336329/art/11124609/10186885-XGVAQZCN-7.jpg",
+      "/paintings/Vedmerd/vedmerd.JPG",
     images: [
       {
         id: 1,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11124609/10186885-XGVAQZCN-7.jpg",
+        src: "/paintings/Vedmerd/vedmerd.JPG",
       },
       {
         id: 2,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11124609/additional_205f573b69554161a072e8366ed7fa9125e19cf6-AICC2-7.jpg",
+        src: "/paintings/Vedmerd/vedmerd2.JPG",
       },
       {
         id: 3,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11124609/additional_1824aeb5338d043ea3c3224d0191d7b2838f442f-AICC2-7.jpg",
+        src: "/paintings/Vedmerd/vedmerd3.JPG",
       },
     ],
     price: 6795,
@@ -372,31 +384,31 @@ export const PAINTINGS: Array<IPainting> = [
   {
     id: 12,
     mainImage:
-      "https://images.saatchiart.com/saatchi/2336329/art/11080629/10142909-MYWDAKZL-8.jpg",
+      "/paintings/Cheer/cheer.JPG",
     images: [
       {
         id: 1,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11080629/additional_816d142dd8e66743cc625a317d09ad49425bd53b-AICC2-8.jpg",
+        src: "/paintings/Cheer/cheer2.JPG",
       },
       {
         id: 2,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11080629/10142909-MYWDAKZL-8.jpg",
+        src: "/paintings/Cheer/cheer.JPG",
       },
       {
         id: 3,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11080629/additional_f2fe0e30ea1f6732cf2956b3d3e3b8ebf36d6dfa-AICC2-8.jpg",
+        src: "/paintings/Cheer/cheer3.JPG",
       },
       {
         id: 4,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11080629/additional_d51ee366c80a02f203b9b8be16e05efcf35ffa61-AICC2-8.jpg",
+        src: "/paintings/Cheer/cheer4.JPG",
       },
       {
         id: 5,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11080629/additional_937655c5d40c9c8ffb1aab100bcfaeb288350d68-AICC2-8.jpg",
+        src: "/paintings/Cheer/cheer5.JPG",
       },
       {
         id: 6,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11080629/additional_338918fca083aed30bbc6d1d7ae1b1a025d188de-AICC2-8.jpg  ",
+        src: "/paintings/Cheer/cheer6.JPG",
       },
     ],
     price: 9550,
@@ -416,31 +428,31 @@ export const PAINTINGS: Array<IPainting> = [
   {
     id: 11,
     mainImage:
-      "https://images.saatchiart.com/saatchi/2336329/art/11134337/additional_8b2d8fc442f639d549a4749be3a058fbf9fc5327-AICC2-7.jpg",
+      "/paintings/Roots/roots.JPG",
     images: [
       {
         id: 1,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11134337/additional_8b2d8fc442f639d549a4749be3a058fbf9fc5327-AICC2-7.jpg",
+        src: "/paintings/Roots/roots.JPG",
       },
       {
         id: 6,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11134337/additional_99225dab29c9ecb7a1905a1dc3842d936cfb4c68-AICC2-8.jpg",
+        src: "/paintings/Roots/roots2.JPG",
       },
       {
         id: 2,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11134337/additional_fac486567dfe926dd808c3356b43b88e9dde5b11-AICC2-8.jpg",
+        src: "/paintings/Roots/roots3.JPG",
       },
       {
         id: 3,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11134337/additional_57ca1fb9ab41fa1dc39926c11040ed8184b2d1ae-AICC2-8.jpg",
+        src: "/paintings/Roots/roots4.JPG",
       },
       {
         id: 4,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11117595/additional_49006c7b218bf58ec987254b98cfcf98c4c0d37d-AICC2-8.jpg",
+        src: "/paintings/Roots/roots5.JPG",
       },
       {
         id: 5,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11117595/additional_c335e97d39e448276f71288d3ff9216f8190b9f1-AICC2-8.jpg",
+        src: "/paintings/Roots/roots3.JPG",
       },
     ],
     price: 5000,
@@ -461,27 +473,23 @@ export const PAINTINGS: Array<IPainting> = [
   {
     id: 9,
     mainImage:
-      "https://images.saatchiart.com/saatchi/2336329/art/11101501/10163781-GHPOKQLR-7.jpg",
+      "/paintings/KyrgyzShaman/kg_shaman.JPG",
     images: [
       {
         id: 1,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11101501/10163781-GHPOKQLR-7.jpg",
+        src: "/paintings/KyrgyzShaman/kg_shaman.JPG",
       },
       {
         id: 2,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11101501/additional_be89e9d93d59c26169e21d317c2179c2809b7058-AICC2-7.jpg",
+        src: "/paintings/KyrgyzShaman/kg_shaman2.JPG",
       },
       {
         id: 3,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11101501/additional_239a528a53e8c475cce0dadd8243de85cc025158-AICC2-7.jpg",
+        src: "/paintings/KyrgyzShaman/kg_shaman3.JPG",
       },
       {
         id: 4,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11101501/additional_ef07364a172a19d27746bea1733dec358883845b-AICC2-7.jpg",
-      },
-      {
-        id: 5,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11101501/additional_6bfc9a0e89f5c21f134583c29279383e89b9a26d-AICC2-7.jpg",
+        src: "/paintings/KyrgyzShaman/kg_shaman4.JPG",
       },
     ],
     price: 4725,
@@ -503,20 +511,28 @@ export const PAINTINGS: Array<IPainting> = [
   {
     id: 14,
     mainImage:
-      "https://images.saatchiart.com/saatchi/2336329/art/11135249/10197525-FQAYVECL-8.jpg",
+      "/paintings/MotherDeer/mother deer.JPG",
     images: [
       {
         id: 1,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11135249/additional_b8528990da78fbdb76356abd073ed8a34e71e50e-AICC2-8.jpg",
+        src: "/paintings/MotherDeer/mother deer.JPG",
       },
       {
         id: 2,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11135249/10197525-FQAYVECL-8.jpg",
+        src: "/paintings/MotherDeer/mother deer2.JPG",
+      },
+      {
+        id: 3,
+        src: "/paintings/MotherDeer/mother deer3.JPG",
       },
       {
         id: 4,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11135249/additional_ccf17a47fcf0a1ddfd19a566105ff1933db4f489-AICC2-8.jpg",
+        src: "/paintings/MotherDeer/mother deer4.JPG",
       },
+      {
+        id: 5,
+        src: "/paintings/MotherDeer/mother deer5.JPG"
+      }
     ],
     price: 7550,
     currency: "EUR",
@@ -535,19 +551,23 @@ export const PAINTINGS: Array<IPainting> = [
   {
     id: 13,
     mainImage:
-      "https://images.saatchiart.com/saatchi/2336329/art/11099433/10161713-UCQZXUNG-8.jpg",
+      "/paintings/OilOnCanvas/OilOnCanvas.JPG",
     images: [
       {
         id: 1,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11099433/additional_7f22742bd9f0e9c3a9819843e6bacb5f0be64b9c-AICC2-8.jpg",
+        src: "/paintings/OilOnCanvas/OilOnCanvas.JPG",
+      },
+      {
+        id: 2,
+        src: "/paintings/OilOnCanvas/OilOnCanvas2.JPG",
       },
       {
         id: 4,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11099433/10161713-UCQZXUNG-8.jpg",
+        src: "/paintings/OilOnCanvas/OilOnCanvas3.JPG",
       },
       {
         id: 3,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11099433/additional_467d9dc5b8a51f274c8c503edce72d469e6dd313-AICC2-8.jpg",
+        src: "/paintings/OilOnCanvas/OilOnCanvas4.JPG",
       },
     ],
     price: 3974,
@@ -574,15 +594,15 @@ export const PAINTINGS: Array<IPainting> = [
       },
       {
         id: 1,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11125137/additional_60a6601147291fa853aeb63544df54d97c792ca0-AICC2-8.jpg",
+        src: "/paintings/AndyWarhol/AndyWarhol.JPG",
       },
       {
         id: 4,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11125137/additional_8508b0badff8d210c94bf53df37ea84ca9a1cca0-AICC2-8.jpg",
+        src: "/paintings/AndyWarhol/AndyWarhol1.JPG",
       },
       {
         id: 3,
-        src: "https://images.saatchiart.com/saatchi/2336329/art/11125137/additional_0f52a7a4224b20a8d655a9e212aea5e07c88a184-AICC2-8.jpg",
+        src: "/paintings/AndyWarhol/AndyWarhol2.JPG",
       },
     ],
     price: 192887,
