@@ -17,6 +17,7 @@ import { PaintingFormValidation } from "./PaintingForm.schema";
 import { sendNotification } from "src/services/notification";
 import SuccessModal from "src/components/Modal/SuccessModal";
 import { formatPrice } from "src/helpers/formatPrice";
+import MainImage from "src/components/MainImage";
 
 const PaintingDetail = () => {
   const { paintingId } = useParams();
@@ -107,8 +108,8 @@ const PaintingDetail = () => {
             <div className="flex flex-col flex-wrap gap-3 mobile:hidden">
               {renderImages}
             </div>
-            <div className="relative w-full max-h-[500px]  h-[500px] flex justify-center pr-7 mobile:pr-0">
-              <img className="h-full mobile:hidden" src={imageToShow} alt="" />
+            <div className="relative w-full max-h-[500px]  h-[500px] flex pl-9 mobile:pr-0">
+              <MainImage thumbnailURL={imageToShow} />
               <Swiper
                 scrollbar={{
                   hide: false,
