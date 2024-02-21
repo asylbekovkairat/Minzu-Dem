@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { RxCross2 } from "react-icons/rx";
 
 const ImageModal = ({
@@ -10,6 +10,17 @@ const ImageModal = ({
   onClose: () => void;
   thumbnailURL: string | undefined;
 }) => {
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("lock-position");
+    } else {
+      document.body.classList.remove("lock-position");
+    }
+
+    return () => {
+      document.body.classList.remove("lock-position");
+    };
+  }, [isOpen]);
   return (
     <div
       className={`fixed inset-0 flex justify-center items-center transition-colors duration-1000 ease-in-out z-50 ${
