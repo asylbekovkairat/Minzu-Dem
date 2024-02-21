@@ -32,7 +32,11 @@ const ImageModal = ({
             <RxCross2 onClick={onClose} size={30} />
           </div>
         </section>
-        <img src={thumbnailURL} alt={thumbnailURL} />
+        <img
+          className="h-[695px] mobile:h-auto"
+          src={thumbnailURL}
+          alt={thumbnailURL}
+        />
       </div>
     </div>
   );
