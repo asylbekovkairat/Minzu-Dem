@@ -18,6 +18,7 @@ import { sendNotification } from "src/services/notification";
 import SuccessModal from "src/components/Modal/SuccessModal";
 import { formatPrice } from "src/helpers/formatPrice";
 import MainImage from "src/components/MainImage";
+import ImageModal from "src/components/Modal/ImageModal";
 
 const PaintingDetail = () => {
   const { paintingId } = useParams();
@@ -29,8 +30,10 @@ const PaintingDetail = () => {
     isModalOpen: false,
     isSuccess: false,
   });
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
   const [inquiryModal, setInquiryModal] = useState<boolean>(false);
   const formRef = React.createRef<HTMLFormElement>();
+  const [isImageOpen, setIsImageOpen] = useState<boolean>(false);
 
   useEffect(() => {
     setImageToShow(currentPaint?.mainImage);
@@ -68,7 +71,15 @@ const PaintingDetail = () => {
           key={id}
           style={{ display: "flex", justifyContent: "center" }}
         >
-          <img src={src} alt={src} className="object-contain" />
+          <img
+            className="object-contain"
+            src={src}
+            alt={src}
+            onClick={() => {
+              setImageToShow(src);
+              openImage();
+            }}
+          />
         </SwiperSlide>
       )),
     [currentPaint?.images]
@@ -90,8 +101,10 @@ const PaintingDetail = () => {
     }
   };
   const handleCloseModal = () => setInquiryModal(false);
-
   const handleOpenModal = () => setInquiryModal(true);
+
+  const openImage = () => setIsImageOpen(true);
+  const closeImage = () => setIsImageOpen(false);
 
   return (
     <>
@@ -102,14 +115,19 @@ const PaintingDetail = () => {
           setRequestResult({ isModalOpen: false, isSuccess: false })
         }
       />
+      <ImageModal
+        isOpen={isImageOpen}
+        onClose={closeImage}
+        thumbnailURL={imageToShow}
+      />
       <div className="container">
         <main className="flex mt-[75px] items-start tablet:flex-col mobile:mt-0">
           <section className="w-1/2 flex gap-3 mobile:w-full">
             <div className="flex flex-col flex-wrap gap-3 mobile:hidden">
               {renderImages}
             </div>
-            <div className="relative w-full max-h-[500px] justify-center h-[500px] flex pl-9 mobile:pr-0">
-              <MainImage thumbnailURL={imageToShow} />
+            <div className="relative w-full max-h-[500px] justify-center  flex pl-9 mobile:pr-0 mobile:pl-0">
+              <MainImage thumbnailURL={imageToShow} openImage={openImage} />
               <Swiper
                 scrollbar={{
                   hide: false,

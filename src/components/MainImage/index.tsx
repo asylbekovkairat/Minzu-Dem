@@ -1,15 +1,20 @@
 import React from "react";
-import "photoswipe/style.css";
 
-const MainImage = ({ thumbnailURL }: { thumbnailURL: string | undefined }) => {
+const MainImage = ({
+  thumbnailURL,
+  openImage,
+}: {
+  thumbnailURL: string | undefined;
+  openImage: () => void;
+}) => {
   return (
-    <a href={thumbnailURL} target="_blank" rel="noreferrer">
-      <img
-        src={thumbnailURL}
-        alt=""
-        style={{ width: "450px", height: "500px", objectFit: "contain" }}
-      />
-    </a>
+    <img
+      className="h-full mobile:hidden"
+      src={thumbnailURL}
+      alt=""
+      onClick={openImage}
+      style={{ width: "450px", objectFit: "contain" }}
+    />
   );
 };
 
