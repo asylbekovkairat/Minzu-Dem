@@ -9,7 +9,7 @@ const MainImage = ({
 }) => {
   return (
     <img
-      className="h-full mobile:hidden"
+      className="h-full cursor-pointer mobile:hidden"
       src={thumbnailURL}
       alt=""
       onClick={openImage}
