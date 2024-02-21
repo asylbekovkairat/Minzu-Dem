@@ -108,7 +108,7 @@ const PaintingDetail = () => {
             <div className="flex flex-col flex-wrap gap-3 mobile:hidden">
               {renderImages}
             </div>
-            <div className="relative w-full max-h-[500px]  h-[500px] flex pl-9 mobile:pr-0">
+            <div className="relative w-full max-h-[500px] justify-center h-[500px] flex pl-9 mobile:pr-0">
               <MainImage thumbnailURL={imageToShow} />
               <Swiper
                 scrollbar={{
