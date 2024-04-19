@@ -7,6 +7,7 @@ export const metadata: Metadata = {
 };
 
 const Bio = () => {
+  
   return (
     <div className="container">
       <section className="flex gap-12 mt-[75px] mobile:flex-col-reverse mobile:mt-11 mobile:mb-20">

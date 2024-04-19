@@ -6,7 +6,10 @@ import { PAINTINGS } from "src/constants";
 
 const Paintings = () => {
   const renderPaintings = useMemo(
-    () => PAINTINGS.map((paint) => <PaintingCard key={paint.id} {...paint} />),
+    () =>
+      PAINTINGS.map((paint, index) => (
+        <PaintingCard key={`${paint.id}-${index}-${paint.title}`} {...paint} />
+      )),
     [PAINTINGS]
   );
   return (

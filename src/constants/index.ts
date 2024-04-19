@@ -28,16 +28,16 @@ export const PAINTINGS: Array<IPainting> = [
     mainImage: "/paintings/111/1+11.JPG",
     images: [
       {
+        id: 3,
+        src: "/paintings/111/1+11.JPG",
+      },
+      {
         id: 2,
         src: "/paintings/111/main.JPG",
       },
       {
         id: 1,
         src: "/paintings/111/1+11_1.JPG",
-      },
-      {
-        id: 3,
-        src: "/paintings/111/1+11.JPG",
       },
     ],
     price: 100000,
@@ -55,7 +55,7 @@ export const PAINTINGS: Array<IPainting> = [
   },
   {
     id: 2,
-    price: 55000,
+    price: 12340,
     currency: "EUR",
     description:
       "The painting is painted in oil on canvas. Over time, people who saw the paintings always wondered, is this cat flying in the sky, swimming in the sea or just dancing? what do you think? what will be your choice?",
@@ -66,8 +66,7 @@ export const PAINTINGS: Array<IPainting> = [
     },
     paintingType: "Painting, Oil on Canvas",
     title: "Happy",
-    mainImage:
-      "/paintings/Happy/happy.JPG",
+    mainImage: "/paintings/Happy/happy.JPG",
     images: [
       {
         id: 4,
@@ -91,9 +90,12 @@ export const PAINTINGS: Array<IPainting> = [
 
   {
     id: 15,
-    mainImage:
-      "/paintings/AncientBlue/ancient-blue.JPG",
+    mainImage: "/paintings/AncientBlue/ancient-blue.JPG",
     images: [
+      {
+        id: 4,
+        src: "/paintings/AncientBlue/ancient-blue.JPG",
+      },
       {
         id: 1,
         src: "/paintings/AncientBlue/ancient-blue2.JPG",
@@ -107,15 +109,11 @@ export const PAINTINGS: Array<IPainting> = [
         src: "/paintings/AncientBlue/ancient-blue4.JPG",
       },
       {
-        id: 4,
-        src: "/paintings/AncientBlue/ancient-blue.JPG",
-      },
-      {
         id: 5,
         src: "/paintings/AncientBlue/ancient-blue5.JPG",
       },
     ],
-    price: 17665,
+    price: 7655,
     currency: "EUR",
     description: [
       "Ancient Blue is an original Minzu Dem oil on canvas painting in soothing bright pastel colors. An abstract expressionist painting in which layers of thick paint are applied with brushes and other tools. It captures the essence of the ocean, sun and fields, merging into a soothing sense of peace that delights the senses and soothes the mind.",
@@ -131,8 +129,7 @@ export const PAINTINGS: Array<IPainting> = [
   },
   {
     id: 6,
-    mainImage:
-      "/paintings/Freedom/freedom.JPG",
+    mainImage: "/paintings/Freedom/freedom.JPG",
     images: [
       {
         id: 1,
@@ -174,8 +171,7 @@ export const PAINTINGS: Array<IPainting> = [
   },
   {
     id: 8,
-    mainImage:
-      "/paintings/Doors/doors.JPG",
+    mainImage: "/paintings/Doors/doors.JPG",
     images: [
       {
         id: 1,
@@ -201,8 +197,7 @@ export const PAINTINGS: Array<IPainting> = [
   },
   {
     id: 7,
-    mainImage:
-      "/paintings/Kernel/kernel.JPG",
+    mainImage: "/paintings/Kernel/kernel.JPG",
     images: [
       {
         id: 1,
@@ -225,7 +220,7 @@ export const PAINTINGS: Array<IPainting> = [
         src: "/paintings/Kernel/kernel5.JPG",
       },
     ],
-    price: 14500,
+    price: 9500,
     currency: "EUR",
     description:
       "In this painting, a woman is depicted embracing the entire planet in her hands. Her pregnant body expresses tenderness and care. The artist conveyed his state after a trip to the mountains - he is full of energy, inspiration, and ready to share his love with the whole world. The painting is filled with bright colors and positive energy that makes the viewer feel joy and gratitude for this beautiful world.",
@@ -240,8 +235,7 @@ export const PAINTINGS: Array<IPainting> = [
   },
   {
     id: 5,
-    mainImage:
-      "/paintings/AbstractImage/abstract-img.JPG",
+    mainImage: "/paintings/AbstractImage/abstract-img.JPG",
     images: [
       {
         id: 1,
@@ -260,7 +254,7 @@ export const PAINTINGS: Array<IPainting> = [
         src: "/paintings/AbstractImage/abstract-img2.JPG",
       },
     ],
-    price: 5450,
+    price: 4320,
     currency: "EUR",
     description:
       "The painting is an abstract image consisting of different colors and shapes. In a painting you can see conflict and roughness, but still find one direction. The author used oil to create this painting on canvas.",
@@ -275,8 +269,7 @@ export const PAINTINGS: Array<IPainting> = [
   },
   {
     id: 3,
-    mainImage:
-      "/paintings/Light/light.JPG",
+    mainImage: "/paintings/Light/light.JPG",
     images: [
       {
         id: 1,
@@ -308,16 +301,15 @@ export const PAINTINGS: Array<IPainting> = [
   },
   {
     id: 10,
-    mainImage:
-      "/paintings/AbstractPatterns/abstract-patterns.JPG",
+    mainImage: "/paintings/AbstractPatterns/abstract-patterns.JPG",
     images: [
-      {
-        id: 1,
-        src: "/paintings/AbstractPatterns/abstract-patterns3.JPG",
-      },
       {
         id: 2,
         src: "/paintings/AbstractPatterns/abstract-patterns.JPG",
+      },
+      {
+        id: 1,
+        src: "/paintings/AbstractPatterns/abstract-patterns3.JPG",
       },
       {
         id: 3,
@@ -348,8 +340,7 @@ export const PAINTINGS: Array<IPainting> = [
   },
   {
     id: 4,
-    mainImage:
-      "/paintings/Vedmerd/vedmerd.JPG",
+    mainImage: "/paintings/Vedmerd/vedmerd.JPG",
     images: [
       {
         id: 1,
@@ -383,16 +374,15 @@ export const PAINTINGS: Array<IPainting> = [
   },
   {
     id: 12,
-    mainImage:
-      "/paintings/Cheer/cheer.JPG",
+    mainImage: "/paintings/Cheer/cheer.JPG",
     images: [
-      {
-        id: 1,
-        src: "/paintings/Cheer/cheer2.JPG",
-      },
       {
         id: 2,
         src: "/paintings/Cheer/cheer.JPG",
+      },
+      {
+        id: 1,
+        src: "/paintings/Cheer/cheer2.JPG",
       },
       {
         id: 3,
@@ -427,8 +417,7 @@ export const PAINTINGS: Array<IPainting> = [
   },
   {
     id: 11,
-    mainImage:
-      "/paintings/Roots/roots.JPG",
+    mainImage: "/paintings/Roots/roots.JPG",
     images: [
       {
         id: 1,
@@ -472,8 +461,7 @@ export const PAINTINGS: Array<IPainting> = [
 
   {
     id: 9,
-    mainImage:
-      "/paintings/KyrgyzShaman/kg_shaman.JPG",
+    mainImage: "/paintings/KyrgyzShaman/kg_shaman.JPG",
     images: [
       {
         id: 1,
@@ -492,7 +480,7 @@ export const PAINTINGS: Array<IPainting> = [
         src: "/paintings/KyrgyzShaman/kg_shaman4.JPG",
       },
     ],
-    price: 4725,
+    price: 12680,
     currency: "EUR",
     description: [
       "The painting is a beautiful representation of spiritual wisdom and inner vision. The creature depicted in the painting seems to possess a deep understanding of the universe and the ability to navigate through different realms. The use of the third eye symbolizes insight and intuition, while the large hands-wings suggest the power to create and fly freely. The headdress adds a touch of mysticism, hinting at the creature's connection to higher energies.",
@@ -510,8 +498,7 @@ export const PAINTINGS: Array<IPainting> = [
   },
   {
     id: 14,
-    mainImage:
-      "/paintings/MotherDeer/mother deer.JPG",
+    mainImage: "/paintings/MotherDeer/mother deer.JPG",
     images: [
       {
         id: 1,
@@ -531,10 +518,10 @@ export const PAINTINGS: Array<IPainting> = [
       },
       {
         id: 5,
-        src: "/paintings/MotherDeer/mother deer5.JPG"
-      }
+        src: "/paintings/MotherDeer/mother deer5.JPG",
+      },
     ],
-    price: 7550,
+    price: 3560,
     currency: "EUR",
     description: [
       "The painting depicts a mother deer divided into several parts. The artist used oil paints to create bright and rich colors. The painting was painted in 2022.",
@@ -550,8 +537,7 @@ export const PAINTINGS: Array<IPainting> = [
   },
   {
     id: 13,
-    mainImage:
-      "/paintings/OilOnCanvas/OilOnCanvas.JPG",
+    mainImage: "/paintings/OilOnCanvas/OilOnCanvas.JPG",
     images: [
       {
         id: 1,
@@ -570,7 +556,7 @@ export const PAINTINGS: Array<IPainting> = [
         src: "/paintings/OilOnCanvas/OilOnCanvas4.JPG",
       },
     ],
-    price: 3974,
+    price: 2300,
     currency: "EUR",
     description: [
       "In Kyrgyz culture there are sunny people carved on stones, I was inspired by them, and then, as usual, my hands did all the work themselves. It was after this picture that I began to develop a deep interest in my culture, because it contains so much wisdom and beauty",
@@ -584,39 +570,39 @@ export const PAINTINGS: Array<IPainting> = [
     title: "Untitled",
     year: 2022,
   },
-  {
-    id: 17,
-    mainImage: "/paintings/AndyWarhol/1.JPG",
-    images: [
-      {
-        id: 7,
-        src: "/paintings/AndyWarhol/1.JPG",
-      },
-      {
-        id: 1,
-        src: "/paintings/AndyWarhol/AndyWarhol.JPG",
-      },
-      {
-        id: 4,
-        src: "/paintings/AndyWarhol/AndyWarhol1.JPG",
-      },
-      {
-        id: 3,
-        src: "/paintings/AndyWarhol/AndyWarhol2.JPG",
-      },
-    ],
-    price: 192887,
-    currency: "EUR",
-    description: [
-      "The painting 'Andy Warhol on the wall' was created using oil paints on canvas. The author was struck by the very empty expression on a wall and decided to capture it on canvas. Almost every viewer, when looking at the painting, begins to feel a wild fear and emptiness, and the author is no exception. Even during the photo shoot, he became scared and wanted to finish it as quickly as possible.",
-    ],
-    sizes: {
-      width: 60,
-      height: 75,
-      d: 2.5,
-    },
-    paintingType: "Oil on canvas",
-    title: "Andy Warhol on the wall",
-    year: 2022,
-  },
+  // {
+  //   id: 17,
+  //   mainImage: "/paintings/AndyWarhol/1.JPG",
+  //   images: [
+  //     {
+  //       id: 7,
+  //       src: "/paintings/AndyWarhol/1.JPG",
+  //     },
+  //     {
+  //       id: 1,
+  //       src: "/paintings/AndyWarhol/AndyWarhol.JPG",
+  //     },
+  //     {
+  //       id: 4,
+  //       src: "/paintings/AndyWarhol/AndyWarhol1.JPG",
+  //     },
+  //     {
+  //       id: 3,
+  //       src: "/paintings/AndyWarhol/AndyWarhol2.JPG",
+  //     },
+  //   ],
+  //   price: 192887,
+  //   currency: "EUR",
+  //   description: [
+  //     "The painting 'Andy Warhol on the wall' was created using oil paints on canvas. The author was struck by the very empty expression on a wall and decided to capture it on canvas. Almost every viewer, when looking at the painting, begins to feel a wild fear and emptiness, and the author is no exception. Even during the photo shoot, he became scared and wanted to finish it as quickly as possible.",
+  //   ],
+  //   sizes: {
+  //     width: 60,
+  //     height: 75,
+  //     d: 2.5,
+  //   },
+  //   paintingType: "Oil on canvas",
+  //   title: "Andy Warhol on the wall",
+  //   year: 2022,
+  // },
 ];
