@@ -40,7 +40,7 @@ export const PAINTINGS: Array<IPainting> = [
         src: "/paintings/111/1+11_1.JPG",
       },
     ],
-    price: 100000,
+    price: 5260,
     currency: "EUR",
     description:
       "1+11=111 is an original Minzu Dem oil on canvas painting in soothing bright pastel colors. It conveys the essence of flame hearts, when souls are the same, creating a new world of love and balance.",
