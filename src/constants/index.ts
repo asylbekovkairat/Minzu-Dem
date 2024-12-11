@@ -182,7 +182,7 @@ export const PAINTINGS: Array<IPainting> = [
         src: "/paintings/Doors/doors2.JPG",
       },
     ],
-    price: 999,
+    price: 3240,
     currency: "EUR",
     description:
       "The painting was painted with acrylic paints on canvas, the painting came to the author in a dream, it looked like different forms of energy and in the form of doors of different colors, the author believes that by opening one main door, you gain access to all the others, the work was written in 2021 on the shore of Lake Issyk -Kul.",
