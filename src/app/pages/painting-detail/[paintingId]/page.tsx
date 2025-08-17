@@ -174,7 +174,7 @@ const PaintingDetail = () => {
                     cm
                   </p>
                   <p className="mt-3 mobile:mt-0">
-                    {!currentPaint?.sold && currentPaint?.price && (
+                    {currentPaint?.price && (
                       <>
                         <strong>Price</strong>: &#x20ac;{" "}
                         {formatPrice(currentPaint.price)}
