@@ -20,6 +20,16 @@ import { formatPrice } from "src/helpers/formatPrice";
 import MainImage from "src/components/MainImage";
 import ImageModal from "src/components/Modal/ImageModal";
 
+const SoldBadge = ({ className = "" }) => {
+  return (
+    <div
+      className={`inline-flex items-center justify-center px-3 py-1 bg-white border-2 border-red-600 text-red-600 text-sm font-bold uppercase tracking-wider rounded-md shadow-md ${className}`}
+    >
+      🔴 SOLD
+    </div>
+  );
+};
+
 const PaintingDetail = () => {
   const { paintingId } = useParams();
   const [currentPaint, setCurrentPaint] = useState<IPainting>();
@@ -141,8 +151,9 @@ const PaintingDetail = () => {
           </section>
           <section className="w-1/2 mobile:w-full mobile:mt-[10px] ">
             <div className="flex flex-col gap-16 items-start justify-between mobile:justify-normal mobile:gap-4 mobile:h-auto">
-              <div>
+              <div className="flex items-center gap-3">
                 <h2 className="font-bold text-3xl">{currentPaint?.title}</h2>
+                {currentPaint?.sold && <SoldBadge className="ml-2" />}
               </div>
 
               <div className="flex flex-col gap-2">
@@ -163,17 +174,25 @@ const PaintingDetail = () => {
                     cm
                   </p>
                   <p className="mt-3 mobile:mt-0">
-                    <strong>Price</strong>: &#x20ac;
-                    {currentPaint?.price && formatPrice(currentPaint.price)}
+                    {!currentPaint?.sold && currentPaint?.price && (
+                      <>
+                        <strong>Price</strong>: &#x20ac;{" "}
+                        {formatPrice(currentPaint.price)}
+                      </>
+                    )}
                   </p>
-                  <p className="mt-[8px] text-[#bfbdbd]">Ships in a Box</p>
+                  {!currentPaint?.sold && (
+                    <p className="mt-[8px] text-[#bfbdbd]">Ships in a Box</p>
+                  )}
                 </div>
-                <button
-                  className="border border-black w-full py-4 text-[18px] hover:bg-[#3a3a3a] hover:text-white transition duration-500 ease-in-out self-end"
-                  onClick={handleOpenModal}
-                >
-                  I want to buy it
-                </button>
+                {!currentPaint?.sold && (
+                  <button
+                    className="border border-black w-full py-4 text-[18px] hover:bg-[#3a3a3a] hover:text-white transition duration-500 ease-in-out self-end"
+                    onClick={handleOpenModal}
+                  >
+                    I want to buy it
+                  </button>
+                )}
               </div>
             </div>
           </section>

@@ -20,6 +20,7 @@ export interface IPainting {
   paintingType: string;
   title: string;
   year: number;
+  sold?: boolean;
 }
 
 export const PAINTINGS: Array<IPainting> = [
@@ -52,6 +53,7 @@ export const PAINTINGS: Array<IPainting> = [
     paintingType: "Painting, Oil on Canvas",
     title: "1+11=111",
     year: 2023,
+    sold: true,
   },
   {
     id: 2,
@@ -534,6 +536,7 @@ export const PAINTINGS: Array<IPainting> = [
     paintingType: "Oil on canvas",
     title: "Untitled 5",
     year: 2022,
+    sold: true,
   },
   {
     id: 13,
